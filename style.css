@@ -1,7 +1,22 @@
 .contanier {
   background: rgb(221, 221, 221);
   /* Top Right Bottom Left */
-  padding: 10% 20px;
-  /* margin: 5% 10px; */
-  margin:auto;
+  padding: 100px;
+  margin: 20px;
+  /* margin:auto; */
+
+  /* Border */
+  border-width: 10px;
+  border-style: ridge dotted;
+  border-color: red blue green yellow;
+  border-radius: 50px 0;
+
+  /* Outline */
+  outline-width: 20px;
+  outline-color: rgb(255, 0, 234);
+  outline-style: solid;
+
+ 
 }
+
+
