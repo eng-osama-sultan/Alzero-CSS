@@ -1,5 +1,9 @@
 .contanier{
-    width: 100px;
-    height: 100px;
     background-color: blue;
+    background-image: url('imges/images.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    
 }
