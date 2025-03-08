@@ -1,44 +1,82 @@
-.contanier {
-  background: rgb(221, 221, 221);
-  /* Top Right Bottom Left */
-  padding: 100px;
-  margin: 20px;
-  /* margin:auto; */
+/* تكليف 01 */
 
-  /* Border */
-  border-width: 10px;
-  border-style: ridge dotted;
-  border-color: red blue green yellow;
-  border-radius: 50px 0;
+/* Any Element With Class Title */
+.title {
+}
 
-  /* Outline */
-  outline-width: 20px;
-  outline-color: rgb(255, 0, 234);
-  outline-style: solid;
+/* Any Element With ID nav */
+#nav {
+}
 
- 
+/* Any Div Element */
+div {
+}
+
+/* Any h2 Element */
+h2 {
 }
 
 
-.div1{
-  height: 20px;
-  background-color: green;
-  margin: 50px;
-  /* display: block;
-  display: inline; */
-  display: inline-block;
+/* التكليف 02 */
+/* اكتب في تعليق نوع كل Style من التالي */
+
+/* 
+<!-- External CSS -->
+<link rel="stylesheet" href="css/file.css" />
+
+<!-- Internal or Embedded CSS -->
+<style>
+p {
+  color: red;
+}
+</style>
+
+<!-- Inline CSS -->
+<p style="color: blue;">This Is Our Paragraph</p>
+ */
+
+
+ /* التكليف 03 */
+
+ /* قم بإستدعاء ملف Style خارجي موجود في مجلد بجانب ال index.html بإسم assets وداخله مجلد باسم css وإسم الملف هو master.css */
+
+
+
+ /* التكليف 05 */
+
+ /* في أسماء ال Identifiers التالية حدد ما هو صالح وما هو غير صالح عن طريق كتابة Valid أو Not Valid في التعليق قبل الإسم
+ */
+
+  /**********************************
+ /* Valid */
+._user-name {
 }
 
-.div2{
-  background-color: yellow;
-  margin: 50px;
-  /* display: none; */
-  visibility: hidden;
+/* Valid */
+.-user-name {
+  
+
 }
 
-.div3{
-  background-color: blue;
-  margin: 50px;
+/* notValid */
+/* .1user-name {
+} */
+
+/* notValid */
+/* .@user-name {
+} */
+
+/* notValid */
+/* .user@name {
+  
+} */
+
+/* Valid */
+._user10name {
+
 }
 
+/* Valid */
+.u {
+}
 
