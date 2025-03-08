@@ -1,9 +1,7 @@
-.contanier{
-    background-color: blue;
-    background-image: url('imges/images.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center bottom;
-    background-size: cover;
-    
+.contanier {
+  background: rgb(221, 221, 221);
+  /* Top Right Bottom Left */
+  padding: 10% 20px;
+  /* margin: 5% 10px; */
+  margin:auto;
 }

@@ -7,3 +7,10 @@
 •	    background-attachment: fixed;
 •	    background-position: center bottom;
 •	    background-size: cover;
+
+
+<h3>Lessons 7 & 8 – Padding and Margin </h3>
+  /* Top Right Bottom Left */
+  •	   padding: 10% 20px;
+  •	   /* margin: 5% 10px; */
+  •	   margin:auto;
