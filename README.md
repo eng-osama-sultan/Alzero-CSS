@@ -19,7 +19,7 @@
   •	   margin:auto;
 </p>
 
-<h3>Lessons 9 & 10 – Padding and Margin </h3>
+<h3>Lessons 9 & 10 – Border and Outline </h3>
 <p>
   /* Border */
   border-width: 10px;
@@ -50,3 +50,29 @@ height + padding + border = actual height of an element
 
 The box-sizing property allows us to include the padding and border in an element's total width and height.
   </p>
+
+<h3>Lessons 11 & 12 – Display and Visibility </h3>
+<p>
+‣ Block
+    -Take full width if no width
+    -Add Line Break
+    -Respect Padding, Margin, Width, Height
+
+‣ Inline
+    -Don't Add Line Break
+    -Don't Respect  Width, Height
+    -Respect Padding, Margin [Just Left and Right]
+
+
+‣ Inline-Block
+  -Respect Padding, Margin, Width, Height
+  -Allow Elements Before and after it
+  
+</p>
+
+<h3>Visibility</h3>
+<p>
+Display: none;
+
+</p>
+
