@@ -1,4 +1,22 @@
 body{
     background-color: black;
     color: white;
+
+}
+h1{
+    width: fit-content;
+    margin: 15px auto;
+    /* background-color: blue; */
+    border: 5px solid;
+    border-radius: 15px 0;
+    padding: 5px 25%;
+
+}
+h2{
+    width: fit-content;
+    margin: 15px auto;
+    /* background-color: blue; */
+    border: 3px solid blue;
+    border-radius: 0 15px ;
+    padding: 5px 25%;  
 }

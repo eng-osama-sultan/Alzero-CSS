@@ -1,82 +1,109 @@
 /* تكليف 01 */
-
-/* Any Element With Class Title */
-.title {
+.assign-1-shape-1{
+    width: 500px;
+    margin: 0 auto 10px  auto;
+    padding: 20px;
+    background-color: rgba(138, 44, 226);
 }
 
-/* Any Element With ID nav */
-#nav {
+.assign-1-shape-2{
+    width: 500px;
+    margin: 0 auto 10px  auto;
+    padding: 20px;
+    background-color: rgba(138, 44, 226, 0.50);
 }
 
-/* Any Div Element */
-div {
+.assign-1-shape-3{
+    width: 500px;
+    margin: 0 auto 10px  auto;
+    padding: 20px;
+    background-color: rgba(138, 44, 226, 0.25);
 }
 
-/* Any h2 Element */
-h2 {
-}
 
 
 /* التكليف 02 */
-/* اكتب في تعليق نوع كل Style من التالي */
+.assign-2-shape-1{
+    height: 400px;
+    width: 400px;
+    margin: 10px auto;
+    background-image: url('imges/images.jpeg');
+    background-repeat: no-repeat;
+    /* background-color: azure; */
+    background-position: center center;
+    border: 2px dotted;
+    
 
-/* 
-<!-- External CSS -->
-<link rel="stylesheet" href="css/file.css" />
-
-<!-- Internal or Embedded CSS -->
-<style>
-p {
-  color: red;
 }
-</style>
+.assign-2-shape-2{
+    height: 400px;
+    width: 400px;
+    margin: 10px auto;
+    background-image: url('imges/images.jpeg');
+    background-repeat: repeat-y;
+    background-position: center;
+    border: 2px dotted;
 
-<!-- Inline CSS -->
-<p style="color: blue;">This Is Our Paragraph</p>
- */
+}
+.assign-2-shape-3{
+    height: 400px;
+    width: 400px;
+    margin: 10px auto;
+    background-image: url('imges/images.jpeg');
+    background-repeat: repeat-x;
+    background-position: center;
+    border: 2px dotted;
+
+}
+.assign-2-shape-4{
+    height: 400px;
+    width: 400px;
+    margin: 10px auto;
+    background-image: url('imges/images.jpeg');
+    border: 2px dotted;
+
+}
 
 
  /* التكليف 03 */
+ .assign-3-shape-1{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    background-image: url('imges/images.jpeg');
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    border: 2px solid;
+ }
+ .assign-3-shape-2{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    background-image: url('imges/images.jpeg');
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    background-position: right;
+    border: 2px solid;
+ }
+ .assign-3-shape-3{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    background-image: url('imges/images.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: bottom;
+    border: 2px solid;
+ }
+ .assign-3-shape-4{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    background-image: url('imges/images.jpeg');
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: right bottom;
+    border: 2px solid;
+ }
 
- /* قم بإستدعاء ملف Style خارجي موجود في مجلد بجانب ال index.html بإسم assets وداخله مجلد باسم css وإسم الملف هو master.css */
-
-
-
- /* التكليف 05 */
-
- /* في أسماء ال Identifiers التالية حدد ما هو صالح وما هو غير صالح عن طريق كتابة Valid أو Not Valid في التعليق قبل الإسم
- */
-
-  /**********************************
- /* Valid */
-._user-name {
-}
-
-/* Valid */
-.-user-name {
-  
-
-}
-
-/* notValid */
-/* .1user-name {
-} */
-
-/* notValid */
-/* .@user-name {
-} */
-
-/* notValid */
-/* .user@name {
-  
-} */
-
-/* Valid */
-._user10name {
-
-}
-
-/* Valid */
-.u {
-}
 
