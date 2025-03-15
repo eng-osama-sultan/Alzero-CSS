@@ -14,9 +14,13 @@ h1{
 }
 h2{
     width: fit-content;
-    margin: 15px auto;
+    margin: 25px auto;
     /* background-color: blue; */
     border: 3px solid blue;
     border-radius: 0 15px ;
     padding: 5px 25%;  
+}
+
+hr{
+    margin: 25px;
 }

@@ -1,109 +1,71 @@
 /* تكليف 01 */
+.assign-1{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .assign-1-shape-1{
-    width: 500px;
-    margin: 0 auto 10px  auto;
+    display: inline;
     padding: 20px;
-    background-color: rgba(138, 44, 226);
+    margin:15px ;
+    background-color: rgb(228, 220, 236);
+    outline: 5px solid black;
+    border: 5px solid red;
+    color: black;
 }
 
 .assign-1-shape-2{
-    width: 500px;
-    margin: 0 auto 10px  auto;
+    display: inline;
     padding: 20px;
-    background-color: rgba(138, 44, 226, 0.50);
+    margin:15px ;
+    background-color: rgb(228, 220, 236);
+    outline: 5px solid black;
+    border: 5px solid;
+    border-color: blue green;
+    color: black;
 }
 
 .assign-1-shape-3{
-    width: 500px;
-    margin: 0 auto 10px  auto;
+    display: inline;
     padding: 20px;
-    background-color: rgba(138, 44, 226, 0.25);
+    margin:15px ;
+    background-color: rgb(228, 220, 236);
+    outline: 5px solid black;
+    border: 5px dashed ;
+    border-color: red green blue yellow;
+    color: black;
 }
 
 
 
 /* التكليف 02 */
-.assign-2-shape-1{
-    height: 400px;
+.element{
     width: 400px;
-    margin: 10px auto;
-    background-image: url('imges/images.jpeg');
-    background-repeat: no-repeat;
-    /* background-color: azure; */
-    background-position: center center;
-    border: 2px dotted;
-    
-
-}
-.assign-2-shape-2{
-    height: 400px;
-    width: 400px;
-    margin: 10px auto;
-    background-image: url('imges/images.jpeg');
-    background-repeat: repeat-y;
-    background-position: center;
-    border: 2px dotted;
-
-}
-.assign-2-shape-3{
-    height: 400px;
-    width: 400px;
-    margin: 10px auto;
-    background-image: url('imges/images.jpeg');
-    background-repeat: repeat-x;
-    background-position: center;
-    border: 2px dotted;
-
-}
-.assign-2-shape-4{
-    height: 400px;
-    width: 400px;
-    margin: 10px auto;
-    background-image: url('imges/images.jpeg');
-    border: 2px dotted;
-
+    background-color: aliceblue;
+    color: black;
+    margin-top: 30px;
+    padding: 10px;
+    outline-style: solid;
+    outline-color: aliceblue;
+    outline-width: 10px;
+    /* outline-left: 10px solid aliceblue; */
 }
 
+.element-1{
+    border-left: 5px solid rgb(240, 15, 158);
+    margin-left: 40px;
+}
 
- /* التكليف 03 */
- .assign-3-shape-1{
-    width: 400px;
-    height: 400px;
-    margin: 10px auto;
-    background-image: url('imges/images.jpeg');
-    background-repeat: no-repeat;
-    background-size: 80% 80%;
-    border: 2px solid;
- }
- .assign-3-shape-2{
-    width: 400px;
-    height: 400px;
-    margin: 10px auto;
-    background-image: url('imges/images.jpeg');
-    background-repeat: no-repeat;
-    background-size: 80% 100%;
-    background-position: right;
-    border: 2px solid;
- }
- .assign-3-shape-3{
-    width: 400px;
-    height: 400px;
-    margin: 10px auto;
-    background-image: url('imges/images.jpeg');
-    background-repeat: no-repeat;
-    background-size: 100% 80%;
-    background-position: bottom;
-    border: 2px solid;
- }
- .assign-3-shape-4{
-    width: 400px;
-    height: 400px;
-    margin: 10px auto;
-    background-image: url('imges/images.jpeg');
-    background-repeat: no-repeat;
-    background-size: 50% 50%;
-    background-position: right bottom;
-    border: 2px solid;
- }
+.element-2{
+    border-left: 5px solid rgb(3, 80, 35);
+    margin-left: 40px;
+    visibility: hidden;
+}
 
+.element-3{
+    border-left: 5px solid rgb(15, 240, 15);
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
 
