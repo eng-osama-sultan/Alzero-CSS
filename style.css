@@ -1,71 +1,37 @@
-/* تكليف 01 */
-.assign-1{
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.assign-1-shape-1{
-    display: inline;
-    padding: 20px;
-    margin:15px ;
-    background-color: rgb(228, 220, 236);
-    outline: 5px solid black;
-    border: 5px solid red;
-    color: black;
+/* 13 Groping Selectors */
+.one, .two, .three, .four{
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.assign-1-shape-2{
-    display: inline;
-    padding: 20px;
-    margin:15px ;
-    background-color: rgb(228, 220, 236);
-    outline: 5px solid black;
-    border: 5px solid;
-    border-color: blue green;
-    color: black;
+.one{
+    background-color: blue;
+    color: white;
 }
 
-.assign-1-shape-3{
-    display: inline;
-    padding: 20px;
-    margin:15px ;
-    background-color: rgb(228, 220, 236);
-    outline: 5px solid black;
-    border: 5px dashed ;
-    border-color: red green blue yellow;
-    color: black;
+.two{
+    background-color: blueviolet;
+    color: white;
 }
 
-
-
-/* التكليف 02 */
-.element{
-    width: 400px;
-    background-color: aliceblue;
-    color: black;
-    margin-top: 30px;
-    padding: 10px;
-    outline-style: solid;
-    outline-color: aliceblue;
-    outline-width: 10px;
-    /* outline-left: 10px solid aliceblue; */
+.three{
+    background-color: brown;
+    color: white;
 }
 
-.element-1{
-    border-left: 5px solid rgb(240, 15, 158);
-    margin-left: 40px;
+.four{
+    background-color: black;
+    color: white;
+    border: 5px solid white;
 }
 
-.element-2{
-    border-left: 5px solid rgb(3, 80, 35);
-    margin-left: 40px;
-    visibility: hidden;
-}
+/* 14 Nesting Selectors */
 
-.element-3{
-    border-left: 5px solid rgb(15, 240, 15);
-    margin-left: 40px;
-    margin-bottom: 50px;
+div p {
+    color: red;
 }
-
