@@ -31,7 +31,24 @@
 }
 
 /* 14 Nesting Selectors */
-
 div p {
     color: red;
+}
+
+
+/* 15 Dimensions - width And height */
+.lesson15{
+    background-color: aliceblue;
+}
+.lesson15 div{
+    /* display: inline; */
+    background-color: brown;
+    margin: 5px;
+    width: fit-content;
+    /* max-width: 300px; */
+    /* min-width: 50px; */
+
+    /* height: fit-content; */
+    /* max-height: 10px; */
+    min-height: 10px;
 }
