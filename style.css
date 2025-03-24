@@ -1,44 +1,47 @@
 /* Task 1 */
-.my-name {
-  color: white;
-  text-shadow: 0.5px 0.5px red, 0.7px 0.7px green, 1px 1px blue;
+div{
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border: 3px solid red;
+
 }
 
+div p{
+    background-color: gray;
+    padding: 20px;
+    border: inherit;
+}
 /* Task 2 */
-.one{
-    text-transform: uppercase;
+.task2 > .one{
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: italic;
 }
 
-.two{
-    text-transform: capitalize;
+.task2 > .two{
+    font-family: "Cairo" ;
+    font-weight: 700;
 }
 
-.three{
-    text-transform: lowercase;
+.task2 > .three{
+    font-family: "Jomhuria";
+    font-weight: 400;
 }
 
 
 /* Task 3 */
-div{
-    width: 400px;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.task3 > .one{
+    font-size: 2.5rem;
 }
 
-/* Task 4 */
-a{
-    padding: 20px;
-
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-    background-color: #009688;
-    border-bottom: 5px solid #00514a;
-    text-decoration: none;
-    text-transform: capitalize;
-    
+.task3 > .two{
+    font-size: 2rem;
 }
+
+.task3 > .three{
+    font-size: 1.5rem;
+}
+
+
