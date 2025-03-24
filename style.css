@@ -7,27 +7,32 @@
     font-size: larger;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .one{
     background-color: blue;
     color: white;
+    cursor: alias;
 }
 
 .two{
     background-color: blueviolet;
     color: white;
+    cursor: all-scroll;
 }
 
 .three{
     background-color: brown;
     color: white;
+    cursor: row-resize
 }
 
 .four{
     background-color: black;
     color: white;
     border: 5px solid white;
+    cursor: col-resize;
 }
 
 /* 14 Nesting Selectors */
@@ -91,4 +96,17 @@ div p {
 
 .text img{
     vertical-align: middle;
+}
+
+
+/* Lessons 23 &  26 – Typography (font family - font size - font style) and Mouse Cursor */
+.typography{
+    text-align: center;
+    /* font-family: 'Dancing Script'; */
+    font-size: 5em;
+    /* font-style: inherit; */
+    font-variant: small-caps;
+    /* font-weight: bold; */
+    cursor: pointer;
+
 }
