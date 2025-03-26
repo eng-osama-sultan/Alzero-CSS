@@ -1,20 +1,13 @@
-/* Float */
+/* calc() */
 
-.parent{
-	background-color: red;
-	padding:10px;
-}
 
-.parent div{
+ div{
 	background-color: #eee;
     color: black;
 	padding-top:10px;
 	padding-bottom:10px;
 	text-align: center;
     float:left ;
-    width: 25%;
-}
-
-.clear{
-    clear: both;
+    width: calc(90% / 5);
+    margin-left: 2%;
 }
