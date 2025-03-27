@@ -1,19 +1,68 @@
-/* Table style */
-table{
-    width: 100%;
-    border: 1px solid #ccc;
-    border-spacing: 5px;
-}
+/* التكليف الاول */
 
-td{
-    padding: 15px;
+.parent{
+    width: 1000px;
     background-color: #eee;
     color: black;
+    overflow: auto;
 }
 
-table thead td{
-    background-color: red;
-    color: white;
+.one-in-row{
+    padding: 10px 0 ;
+    background-color: #ccc;
+    margin: 15px;
+    /* margin-bottom: 50px; */
+    width: calc((100% -30px)/1);
+    
+}
+
+.three-in-row{
+    display: inline-block;
+    padding: 10px 0 ;
+    flex-direction: row;
+    background-color: #ccc;
+    margin-right: 15px;
+    margin-bottom:15px ;
+    width: calc((100% - 70px) / 3);
+}
+
+
+.two-in-row{
+    display: inline-block;
+    padding: 10px 0 ;
+    flex-direction: row;
+    background-color: #ccc;
+    margin-right: 15px;
+    margin-bottom:15px ;
+    width: calc((100% - 50px) / 2);
+}
+
+.four-in-row{
+    display: inline-block;
+    padding: 10px 0 ;
+    flex-direction: row;
+    background-color: #ccc;
+    margin-right: 15px;
+    margin-bottom:15px ;
+    width: calc((100% - 90px) / 4);
+}
+
+/* التكليف الثاني */
+
+div {
+    margin: 20px auto;
+    width: 300px;
     font-weight: bold;
-}
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #ccc; /* Get The Background From Image */
+    color: black;
+  }
 
+  .one{
+    background-color: #cccccc30;
+  }
+
+  .two{
+    opacity: .1;
+  }
