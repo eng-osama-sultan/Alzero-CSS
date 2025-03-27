@@ -1,68 +1,201 @@
 /* التكليف الاول */
-
-.parent{
-    width: 1000px;
-    background-color: #eee;
-    color: black;
-    overflow: auto;
-}
-
-.one-in-row{
-    padding: 10px 0 ;
-    background-color: #ccc;
-    margin: 15px;
-    /* margin-bottom: 50px; */
-    width: calc((100% -30px)/1);
+.task1{
+    position: relative;
+    height: 200px;
+    left: 250px;
     
 }
 
-.three-in-row{
-    display: inline-block;
-    padding: 10px 0 ;
-    flex-direction: row;
-    background-color: #ccc;
-    margin-right: 15px;
-    margin-bottom:15px ;
-    width: calc((100% - 70px) / 3);
+.black{
+    position: absolute;
+    background-color: white;
+    top: 30px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+}
+
+.blue{
+    position: absolute;
+    background-color: blue;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    
+}
+
+.green{
+    position: absolute;
+    background-color: green;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.red{
+    position: absolute;
+    background-color: red;
+    top: 40px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
 }
 
 
-.two-in-row{
-    display: inline-block;
-    padding: 10px 0 ;
-    flex-direction: row;
-    background-color: #ccc;
-    margin-right: 15px;
-    margin-bottom:15px ;
-    width: calc((100% - 50px) / 2);
-}
 
-.four-in-row{
-    display: inline-block;
-    padding: 10px 0 ;
-    flex-direction: row;
-    background-color: #ccc;
-    margin-right: 15px;
-    margin-bottom:15px ;
-    width: calc((100% - 90px) / 4);
-}
+
+
 
 /* التكليف الثاني */
-
-div {
-    margin: 20px auto;
-    width: 300px;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 20px;
-    background-color: #ccc; /* Get The Background From Image */
+.task2{
+    position: relative;
+    left: 250px;
+    width: 400px;
+    background-color: white;
     color: black;
-  }
+    padding: 10px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    border-left: 3px solid aqua;
+    border-right: 3px solid aqua;
+    
+}
 
-  .one{
-    background-color: #cccccc30;
-  }
+.top-left{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    background-color: aqua;
+    padding: 0 10px;
+    border-right: 3px solid red;
+}
 
-  .two{
-    opacity: .1;
-  }
+.bottom-left{
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+    background-color: aqua;
+    padding: 0 10px;
+    border-right: 3px solid red;
+}
+
+.top-right{
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background-color: aqua;
+    padding: 0 10px;
+    border-left: 3px solid red;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: -10px;
+    right: -15px;
+    background-color: aqua;
+    padding: 0 10px;
+    border-left: 3px solid red;
+}
+
+/* التكليف الثالث */
+.task3{
+    background-color: white;
+    color: black;
+    text-align: start;
+    overflow: auto;
+}
+
+.main-ul{
+    width: 400px;
+}
+
+ul li{
+    background-color: #ccc;
+    margin: 15px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+ol li{
+    background-color: white;
+}
+
+
+.html li{
+    list-style-type: decimal;
+}
+
+.css li{
+    list-style-type: upper-roman;
+}
+
+.javascript{
+    padding-left: 0px;
+}
+.javascript li{
+    background-color: white;
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 0px;
+    
+
+}
+
+/* التكليف الرابع */
+.task4{
+    background-color: white;
+    height: 500px;
+    padding: 15px;
+    color: black;
+}
+
+ /* Table style */
+ table{
+    width: 700px;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+thead th{
+    background-color: #404040;
+    color: white;
+    padding: 10px;
+}
+
+tbody td{
+    background-color: #ccc;
+    padding: 10px;
+}
+
+table, tr, td, th{
+border: 1px solid white;
+}
+
+img{
+    width: 50px;
+
+}
+
+button{
+    color: white;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+
+}
+.btn-view{
+    background-color: #03a9f4;
+}
+
+.btn-delete{
+    background-color: #E91E63;
+}
+
+
