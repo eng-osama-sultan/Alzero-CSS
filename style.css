@@ -1,12 +1,51 @@
-/* opacity */
+/* Position (relative, absolute, fixed, *static, sticky) */
 
+/* Header */
+header{
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main{
+    height: 1000px;
+    background-color: aliceblue;
+    position: relative;
+}
+.one, .two{
+    width: fit-content;
+    width: 100px;
+}
 .one{
     background-color: red;
-    opacity: 0.2;
-    margin: 5px;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+
 }
 
 .two{
-    background-color: red;
-    margin: 5px;
+    background-color: blue;
+    /* position: relative;
+    left: 20px; */
+}
+
+.icon{
+    background-color: aquamarine;
+    padding: 10px;
+    color: black;
+    width: fit-content;
+    position: fixed;
+    right:25px;
+    bottom: 15px;
+    z-index: 10;
+    border-radius: 100%;
 }
