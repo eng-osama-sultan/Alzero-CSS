@@ -1,201 +1,43 @@
-/* التكليف الاول */
-.task1{
-    position: relative;
-    height: 200px;
-    left: 250px;
-    
-}
+/* 
+Pseudo Classes
+*/
 
-.black{
-    position: absolute;
-    background-color: white;
-    top: 30px;
-    left: 20px;
-    width: 100px;
-    height: 100px;
-    z-index: 0;
-}
-
-.blue{
-    position: absolute;
-    background-color: blue;
-    top: 20px;
-    left: 20px;
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    
-}
-
-.green{
-    position: absolute;
-    background-color: green;
-    top: 30px;
-    left: 30px;
-    width: 100px;
-    height: 100px;
-    z-index: 2;
-}
-
-.red{
-    position: absolute;
+.one{
     background-color: red;
-    top: 40px;
-    left: 40px;
+    color: white;
+}
+
+.two{
+    background-color: #eee;
     width: 100px;
     height: 100px;
-    z-index: 3;
 }
 
-
-
-
-
-
-/* التكليف الثاني */
-.task2{
-    position: relative;
-    left: 250px;
-    width: 400px;
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border-top: 3px solid red;
-    border-bottom: 3px solid red;
-    border-left: 3px solid aqua;
-    border-right: 3px solid aqua;
-    
+a{
+    color: green ;
+    text-decoration: none;
 }
 
-.top-left{
-    position: absolute;
-    top: -10px;
-    left: -15px;
-    background-color: aqua;
-    padding: 0 10px;
-    border-right: 3px solid red;
+a:hover{
+    color: red;
 }
 
-.bottom-left{
-    position: absolute;
-    bottom: -10px;
-    left: -15px;
-    background-color: aqua;
-    padding: 0 10px;
-    border-right: 3px solid red;
+.ch:checked + label{
+    color: red;
 }
 
-.top-right{
-    position: absolute;
-    top: -10px;
-    right: -15px;
-    background-color: aqua;
-    padding: 0 10px;
-    border-left: 3px solid red;
+a:visited{
+    color: yellow;
 }
 
-.bottom-right{
-    position: absolute;
-    bottom: -10px;
-    right: -15px;
-    background-color: aqua;
-    padding: 0 10px;
-    border-left: 3px solid red;
+div:empty{
+    border: 5px solid red;
 }
 
-/* التكليف الثالث */
-.task3{
-    background-color: white;
-    color: black;
-    text-align: start;
-    overflow: auto;
+.in{
+    border: 3px solid blue;
 }
 
-.main-ul{
-    width: 400px;
+.in:focus{
+    border: 3px solid yellow;
 }
-
-ul li{
-    background-color: #ccc;
-    margin: 15px;
-    padding: 10px;
-    list-style-type: none;
-}
-
-ol li{
-    background-color: white;
-}
-
-
-.html li{
-    list-style-type: decimal;
-}
-
-.css li{
-    list-style-type: upper-roman;
-}
-
-.javascript{
-    padding-left: 0px;
-}
-.javascript li{
-    background-color: white;
-    list-style-type: circle;
-    list-style-position: inside;
-    margin-left: 0px;
-    
-
-}
-
-/* التكليف الرابع */
-.task4{
-    background-color: white;
-    height: 500px;
-    padding: 15px;
-    color: black;
-}
-
- /* Table style */
- table{
-    width: 700px;
-    margin: auto;
-    border-collapse: collapse;
-    border-spacing: 5px;
-}
-
-thead th{
-    background-color: #404040;
-    color: white;
-    padding: 10px;
-}
-
-tbody td{
-    background-color: #ccc;
-    padding: 10px;
-}
-
-table, tr, td, th{
-border: 1px solid white;
-}
-
-img{
-    width: 50px;
-
-}
-
-button{
-    color: white;
-    border: none;
-    padding: 5px;
-    font-weight: bold;
-
-}
-.btn-view{
-    background-color: #03a9f4;
-}
-
-.btn-delete{
-    background-color: #E91E63;
-}
-
-
