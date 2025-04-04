@@ -1,43 +1,83 @@
 /* 
-Pseudo Classes
+Pseudo Elements
 */
 
-.one{
-    background-color: red;
-    color: white;
+
+/*Lesson 35 - Pseudo Elements (::first-letter, ::first-line, ::selection) */
+.one-lesson35{
+    
 }
 
-.two{
+.one-lesson35::first-letter{
+    background-color: rgba(42, 126, 165, 0.559);
+    font-size: xx-large;
+    padding: 5px;
+    margin: 5px;
+}
+
+.two-lesson35{
+
+}
+
+.two-lesson35::first-line{
+    background-color: blue;
+    padding: 46px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+::selection{
+    background-color: blueviolet;
+}
+
+
+/* Lesson 35 - Pseudo Elements (::after, ::before, content) */
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.one-lesson36 {
     background-color: #eee;
-    width: 100px;
-    height: 100px;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+    color: black;
 }
 
-a{
-    color: green ;
-    text-decoration: none;
+.one-lesson36::after{
+    content: ' ';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background-color: #009688;
 }
 
-a:hover{
-    color: red;
+.one-lesson36::before{
+    content: ' ';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: -25px;
+    top: 50%;
+    margin-top: -10px;
+    border: 10px solid ;
+    border-color: transparent #009688 transparent transparent ;
 }
 
-.ch:checked + label{
-    color: red;
+.user {
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    color: black;
 }
 
-a:visited{
-    color: yellow;
-}
-
-div:empty{
-    border: 5px solid red;
-}
-
-.in{
-    border: 3px solid blue;
-}
-
-.in:focus{
-    border: 3px solid yellow;
-}
+/* Lesson 37 - Pseudo Elements (content & Trainings) */
