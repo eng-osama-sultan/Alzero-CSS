@@ -2,84 +2,107 @@
 Pseudo Elements
 */
 
-
 /*Lesson 35 - Pseudo Elements (::first-letter, ::first-line, ::selection) */
-.one-lesson35{
-    
+.one-lesson35 {
 }
 
-.one-lesson35::first-letter{
-    background-color: rgba(42, 126, 165, 0.559);
-    font-size: xx-large;
-    padding: 5px;
-    margin: 5px;
+.one-lesson35::first-letter {
+  background-color: rgba(42, 126, 165, 0.559);
+  font-size: xx-large;
+  padding: 5px;
+  margin: 5px;
 }
 
-.two-lesson35{
-
+.two-lesson35 {
 }
 
-.two-lesson35::first-line{
-    background-color: blue;
-    padding: 46px;
-    font-weight: bold;
-    font-style: italic;
+.two-lesson35::first-line {
+  background-color: blue;
+  padding: 46px;
+  font-weight: bold;
+  font-style: italic;
 }
 
-::selection{
-    background-color: blueviolet;
+::selection {
+  background-color: blueviolet;
 }
-
 
 /* Lesson 35 - Pseudo Elements (::after, ::before, content) */
 .parent {
-    margin-bottom: 20px;
-    overflow: hidden;
-    counter-increment: members-count;
+  margin-bottom: 20px;
+  overflow: hidden;
+  counter-increment: members-count;
 }
 
 .one-lesson36 {
-    background-color: #eee;
-    padding: 10px;
-    width: 600px;
-    float: left;
-    position: relative;
-    color: black;
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+  color: black;
 }
 
-.one-lesson36::before{
-    content: attr(data-text);
-    display: none;
+.one-lesson36::before {
+  content: attr(data-text);
+  display: none;
 }
 
-.one-lesson36:hover:before{
-    display: block;
+.one-lesson36:hover:before {
+  display: block;
 }
 
-.one-lesson36::after{
-    content: counter(members-count);
-    position:absolute;
-    background-color: red;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    right: -10px;
-    top: 50%;
-    margin-top: -10px;
-    width: 20px;
-    height: 20px;
-
+.one-lesson36::after {
+  content: counter(members-count);
+  position: absolute;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  right: -10px;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
 }
 
 .user {
-    background-color: #eee;
-    width: 50px;
-    margin-right: 20px;
-    padding: 10px;
-    height: 55.5px;
-    float: left;
-    font-size: 50px;
-    text-align: center;
-    color: black;
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+  color: black;
 }
 
+/* Lesson 39 - Border Radius */
+.Lesson39 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 20px auto;
+  border-radius: 50px;
+}
+
+/* Lesson 40 - Box Shadows and Examples */
+/* 
+    H-shadow
+    V-shadow
+    Blur الضباب
+    Spread نسبةالانتشار
+    Color
+    Inset هل خارجي ام داخلي
+
+*/
+.Lesson40 {
+  padding: 20px;
+  background-color: #eee;
+  margin: 40px auto;
+  width: 300px;
+  box-shadow: 1px 2px 29px 5px rgb(188, 215, 15) inset, 1px 2px 29px 5px white ;
+  color: black;
+  border-radius: 25px;
+}
