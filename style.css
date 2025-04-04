@@ -35,6 +35,7 @@ Pseudo Elements
 .parent {
     margin-bottom: 20px;
     overflow: hidden;
+    counter-increment: members-count;
 }
 
 .one-lesson36 {
@@ -46,26 +47,28 @@ Pseudo Elements
     color: black;
 }
 
-.one-lesson36::after{
-    content: ' ';
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    right: -10px;
-    top: 0;
-    background-color: #009688;
+.one-lesson36::before{
+    content: attr(data-text);
+    display: none;
 }
 
-.one-lesson36::before{
-    content: ' ';
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    left: -25px;
+.one-lesson36:hover:before{
+    display: block;
+}
+
+.one-lesson36::after{
+    content: counter(members-count);
+    position:absolute;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
     top: 50%;
     margin-top: -10px;
-    border: 10px solid ;
-    border-color: transparent #009688 transparent transparent ;
+    width: 20px;
+    height: 20px;
+
 }
 
 .user {
@@ -80,4 +83,3 @@ Pseudo Elements
     color: black;
 }
 
-/* Lesson 37 - Pseudo Elements (content & Trainings) */
