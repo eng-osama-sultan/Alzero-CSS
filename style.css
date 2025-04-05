@@ -9,7 +9,7 @@ CSS الدروس من 42 إلى 53
    box-sizing: border-box;
 }
 
-.one{
+.Lesson42 .one{
    background-color: #eee;
    width: 200px;
    height: 100px;
@@ -26,7 +26,7 @@ CSS الدروس من 42 إلى 53
 
 }
 
-.one:hover{
+.Lesson42 .one:hover{
    margin: 10px;
    border-radius: 25px;
    width: 300px ;
@@ -41,4 +41,54 @@ CSS الدروس من 42 إلى 53
    font-weight: bold;
    font-size: xx-large;
 
+}
+
+/* Lesson 43 - !important declaration */
+.Lesson43 div{
+   background-color: #eee !important;
+   color: black;
+}
+
+/* Lesson 44 - Margin Collapse */
+.Lesson44 .parent{
+   overflow: hidden;
+   margin: auto;
+   width: 400px;
+   height: 200px;
+   padding: 10px;
+   background-color: #eee;
+}
+
+.Lesson44 .one, .two{
+   float: left;
+   width: 50%;
+   height: 100%;
+   padding: 10px;
+   background-color: #ddd;
+}
+
+/* .Lesson44 .two{
+   float: left;
+   width: 50%;
+   height: 100%;
+   padding: 10px;
+   background-color: #ddd;
+} */
+
+.Lesson44 .two .up{
+
+   color: white;
+   height: 50%;
+   background-color: red;
+   padding: 10px;
+   margin-bottom: 30px;
+}
+
+.Lesson44 .two .down{
+
+   color: white;
+   height: 50%;
+   background-color: green;
+   padding: 10px;
+   margin-top: 20px;
 }
