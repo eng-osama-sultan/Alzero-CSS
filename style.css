@@ -1,108 +1,130 @@
 /* 
-Pseudo Elements
+CSS Assignments Lessons 34 - 37
 */
 
-/*Lesson 35 - Pseudo Elements (::first-letter, ::first-line, ::selection) */
-.one-lesson35 {
-}
+ /* التكليف الاول */
 
-.one-lesson35::first-letter {
-  background-color: rgba(42, 126, 165, 0.559);
-  font-size: xx-large;
-  padding: 5px;
-  margin: 5px;
-}
+ .task1 div{
+    margin: 10px auto;
+    align-content: center;
+    color: black;
+    width: 300px;
+    height: 60px;
+    background-color: #eee;
+ }
 
-.two-lesson35 {
-}
+ .task1 div:empty{
+    background-color: red;
+ }
 
-.two-lesson35::first-line {
-  background-color: blue;
-  padding: 46px;
-  font-weight: bold;
-  font-style: italic;
-}
+  /* التكليف الثاني */
+ .task2 div{
+    padding: 10px 30px;
+    margin: 10px auto;
+    align-content: center;
+    color: black;
+    width: fit-content;
+    height: 60px;
+    background-color: #eee;
+    position: relative;
+ }
 
-::selection {
-  background-color: blueviolet;
-}
+ .task2 div::before{
+    content: "1";
+    padding: 10px;
+    background-color: red;
+    color: black;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    margin-top: 15px;
+ }
 
-/* Lesson 35 - Pseudo Elements (::after, ::before, content) */
-.parent {
-  margin-bottom: 20px;
-  overflow: hidden;
-  counter-increment: members-count;
-}
+   /* التكليف الثالث */
+ .task3{
+    padding: 10px 30px;
+    margin: 10px auto;
+    align-content: center;
+    color: black;
+    width: 700px;
+    height: fit-content;
+    background-color: #fff;
+    position: relative;
+ }
 
-.one-lesson36 {
-  background-color: #eee;
-  padding: 10px;
-  width: 600px;
-  float: left;
-  position: relative;
-  color: black;
-}
+ .task3 p{
+    padding: 10px 30px;
+    margin: 10px auto;
+    align-content: center;
+    color: black;
+    width: 400px;
+    height: fit-content;
+    background-color: #eee;
+    position: relative;
+    border-left: 6px solid #e91e63;
+ }
 
-.one-lesson36::before {
-  content: attr(data-text);
-  display: none;
-}
+ .task3 p::before{
+    content: attr(data-person);
+    padding: 5px;
+    margin: 10px 5px;
+    align-content: center;
+    color: black;
+    width: 60px;
+    height: fit-content;
+    background-color: #eee;
+    position: absolute;
+    left: -104px;
+    top: -6px;
 
-.one-lesson36:hover:before {
-  display: block;
-}
+ }
 
-.one-lesson36::after {
-  content: counter(members-count);
-  position: absolute;
-  background-color: red;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  right: -10px;
-  top: 50%;
-  margin-top: -10px;
-  width: 20px;
-  height: 20px;
-}
+ .task3 p::after{
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-top: -13px;
+    width: 0px;
+    height: 0px;
+    border: 13px solid;
+    border-color: transparent #e91e63 transparent transparent;
+ }
 
-.user {
-  background-color: #eee;
-  width: 50px;
-  margin-right: 20px;
-  padding: 10px;
-  height: 55.5px;
-  float: left;
-  font-size: 50px;
-  text-align: center;
-  color: black;
-}
 
-/* Lesson 39 - Border Radius */
-.Lesson39 {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  margin: 20px auto;
-  border-radius: 50px;
-}
+   /* التكليف الرابع */
+   .task4{
+    padding: 10px 30px;
+    margin: 10px auto;
+    align-content: center;
+    color: black;
+    width: 700px;
+    height: fit-content;
+    background-color: #fff;
+    position: relative;
+ }
 
-/* Lesson 40 - Box Shadows and Examples */
-/* 
-    H-shadow
-    V-shadow
-    Blur الضباب
-    Spread نسبةالانتشار
-    Color
-    Inset هل خارجي ام داخلي
+ .task4 p{
+    padding: 10px 30px;
+    margin: 10px auto;
+    align-content: center;
+    color: black;
+    width: 400px;
+    height: fit-content;
+    background-color: #eee;
+    position: relative;
+    border-right: 5px solid red;
+    counter-increment: members-count;
+ }
 
-*/
-.Lesson40 {
-  padding: 20px;
-  background-color: #eee;
-  margin: 40px auto;
-  width: 300px;
-  box-shadow: 1px 2px 29px 5px rgb(188, 215, 15) inset, 1px 2px 29px 5px white ;
-  color: black;
-  border-radius: 25px;
-}
+ .task4 p::before{
+    content: counter(members-count);
+    padding: 10px 20px;
+    align-content: center;
+    color: black;
+    background-color: red;
+    position: absolute;
+    left: -26px;
+    top: 0px;
+
+ }
