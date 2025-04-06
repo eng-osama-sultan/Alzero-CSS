@@ -92,3 +92,46 @@ CSS الدروس من 42 إلى 53
    padding: 10px;
    margin-top: 20px;
 }
+
+
+/* Lesson 45 - CSS Variables */
+/* 
+   - Global Variable
+   - Local Variable
+      var(Variable name, Fallback value)
+*/
+
+:root{
+   --mainColor: yellow ;
+   --mainPadding: 10px;
+}
+.Lesson45 .main{
+   background-color: var(--mainColor, green);
+   color: white;
+   padding: var(--mainPadding, 20px);
+   border: 3px solid  var(--mainColor, green);
+}
+
+.Lesson45 h2{
+   color: var(--mainColor, green);
+   background-color: #eee;
+   padding: var(--mainPadding, 20px);
+   border: 3px solid  var(--mainColor, green);
+
+}
+
+.Lesson45 .p{
+   color: var(--mainColor, green);
+   border: 2px solid var(--mainColor, green);
+   padding: var(--mainPadding, 20px);
+}
+
+.Lesson45 a:hover{
+   color: var(--mainColor, green);
+}
+
+.Lesson45 .local{
+   --mainColor: white ;
+   background-color: var(--mainColor);
+   color: black;
+}
