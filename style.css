@@ -1,137 +1,55 @@
 /* 
 CSS الدروس من 42 إلى 53
+
+Flex Box 46 to 53
 */
 
- /* Lesson 42 - Transition */
+ /* Lesson 46 - FlexBox (Parent - Direction - Wrap - Flow)
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex-flow: [Flex-Direction] + [Flex-Wrap];
+ 
+ */
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
-.Lesson42 .one{
-   background-color: #eee;
-   width: 200px;
-   height: 100px;
-   color: black;
-   transition: 1s;
-   -webkit-transition: 1s;
-   -moz-transition: 1s;
-   -ms-transition: 1s;
-   -o-transition: 1s;
-
-   transition-delay: 2s;
-   transition-property: font-size, height, width, margin, border-radius ;
-   transition-timing-function: ease;
-
-}
-
-.Lesson42 .one:hover{
-   margin: 10px;
-   border-radius: 25px;
-   width: 300px ;
-   height: 200px;
-   -webkit-border-radius: 25px;
-   -moz-border-radius: 25px;
-   -ms-border-radius: 25px;
-   -o-border-radius: 25px;
-
-   background-color: aquamarine;
-   align-content: center;
-   font-weight: bold;
-   font-size: xx-large;
-
-}
-
-/* Lesson 43 - !important declaration */
-.Lesson43 div{
-   background-color: #eee !important;
-   color: black;
-}
-
-/* Lesson 44 - Margin Collapse */
-.Lesson44 .parent{
+.Lesson46 .flex {
    overflow: hidden;
-   margin: auto;
-   width: 400px;
-   height: 200px;
-   padding: 10px;
    background-color: #eee;
+   width: 600px;
+   padding: 20px;
+   margin: 20px auto;
+   display: flex;
+   /* flex-direction: row;
+   flex-wrap: wrap-reverse; */
+   flex-flow: row wrap-reverse;
 }
 
-.Lesson44 .one, .two{
-   float: left;
-   width: 50%;
-   height: 100%;
-   padding: 10px;
-   background-color: #ddd;
-}
-
-/* .Lesson44 .two{
-   float: left;
-   width: 50%;
-   height: 100%;
-   padding: 10px;
-   background-color: #ddd;
-} */
-
-.Lesson44 .two .up{
-
-   color: white;
-   height: 50%;
+.Lesson46 .flex div {
    background-color: red;
-   padding: 10px;
-   margin-bottom: 30px;
-}
-
-.Lesson44 .two .down{
-
    color: white;
-   height: 50%;
-   background-color: green;
-   padding: 10px;
-   margin-top: 20px;
+   width: 25%;
+   text-align: center;
+   padding: 20px;
 }
 
-
-/* Lesson 45 - CSS Variables */
-/* 
-   - Global Variable
-   - Local Variable
-      var(Variable name, Fallback value)
-*/
-
-:root{
-   --mainColor: yellow ;
-   --mainPadding: 10px;
-}
-.Lesson45 .main{
-   background-color: var(--mainColor, green);
-   color: white;
-   padding: var(--mainPadding, 20px);
-   border: 3px solid  var(--mainColor, green);
-}
-
-.Lesson45 h2{
-   color: var(--mainColor, green);
+.Lesson46 .float {
+   overflow: hidden;
    background-color: #eee;
-   padding: var(--mainPadding, 20px);
-   border: 3px solid  var(--mainColor, green);
-
+   width: 600px;
+   padding: 20px;
+   margin: 20px auto;
 }
 
-.Lesson45 .p{
-   color: var(--mainColor, green);
-   border: 2px solid var(--mainColor, green);
-   padding: var(--mainPadding, 20px);
-}
-
-.Lesson45 a:hover{
-   color: var(--mainColor, green);
-}
-
-.Lesson45 .local{
-   --mainColor: white ;
-   background-color: var(--mainColor);
-   color: black;
+.Lesson46 .float div {
+   background-color: red;
+   color: white;
+   width: 25%;
+   text-align: center;
+   padding: 20px;
+   float: left;
 }
