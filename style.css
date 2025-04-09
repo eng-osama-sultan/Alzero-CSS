@@ -17,6 +17,13 @@ Flex Box 46 to 53
 
       align-content: stretch;
  
+
+   Lesson 50 - FlexBox for child (Grow - shrink - Order)
+      flex-grow: 0;
+      flex-shrink: 1;
+      order: 0;
+
+
  */
 *{
    margin: 0;
@@ -24,45 +31,46 @@ Flex Box 46 to 53
    box-sizing: border-box;
 }
 
-.Lesson46 .flex {
+.Lesson50 .flex {
    overflow: hidden;
    background-color: #eee;
-   width: 600px;
+   /* width: 600px; */
    padding: 20px;
    margin: 20px auto;
    display: flex;
-   /* flex-direction: row;
-   flex-wrap: wrap-reverse; */
-   flex-flow: row wrap-reverse;
-   justify-content: space-around;
-   /* align-items: center; */
-   align-content: center;
+
    gap: 2px;
 }
 
-.Lesson46 .flex div {
+.Lesson50 .flex div {
    background-color: red;
    color: white;
-   width: calc(90%/5);
+   width: 80px;
    text-align: center;
    padding: 20px;
+
 }
 
-.Lesson46 .float {
-   overflow: hidden;
-   background-color: #eee;
-   width: 600px;
-   padding: 20px;
-   margin: 20px auto;
+.Lesson50 .one{
+   flex-grow: 3;
+   flex-shrink: 5;
+   order: 5;
 }
 
-.Lesson46 .float div {
-   background-color: red;
-   color: white;
-   width: calc((100% - 20px)  / 5);
-   text-align: center;
-   padding: 20px;
-   float: left;
-   margin-left: 2px;
-   margin-right: 2px;
+.Lesson50 .two{
+   flex-grow: 2;
+   background-color: green !important;
+   order: 4;
 }
+
+.Lesson50  .three{
+   flex-grow: 3;
+   flex-shrink: 2;
+   background-color: blue !important;
+   order: 3;
+}
+
+.Lesson50 .four{
+   order: 2 ;
+}
+
