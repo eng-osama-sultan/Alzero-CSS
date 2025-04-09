@@ -27,7 +27,9 @@ Flex Box 46 to 53
       flex-basis: auto;
 
       flex: [flex-grow] = 0 [flex-shrink] = 1 [flex-basis] = auto or px or %;
-
+   
+   Lesson 52 - FlexBox for child (align-self and Flex Games and Task)
+      align-self: auto;
 */
 *{
    margin: 0;
@@ -38,7 +40,7 @@ Flex Box 46 to 53
 .Lesson50 .flex {
    overflow: hidden;
    background-color: #eee;
-   /* width: 600px; */
+   height: 400px;
    padding: 20px;
    margin: 20px auto;
    display: flex;
@@ -82,5 +84,6 @@ Flex Box 46 to 53
 .Lesson50 .five{
    flex-basis: 20%;
    order: 1 ;
+   align-self: center ;
 }
 
