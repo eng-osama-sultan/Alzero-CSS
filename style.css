@@ -22,9 +22,13 @@ Flex Box 46 to 53
       flex-grow: 0;
       flex-shrink: 1;
       order: 0;
+   
+   Lesson 51 - FlexBox for child (Basis - and flex shorthand)
+      flex-basis: auto;
 
+      flex: [flex-grow] = 0 [flex-shrink] = 1 [flex-basis] = auto or px or %;
 
- */
+*/
 *{
    margin: 0;
    padding: 0;
@@ -71,6 +75,12 @@ Flex Box 46 to 53
 }
 
 .Lesson50 .four{
+   flex-basis: auto;
    order: 2 ;
+}
+
+.Lesson50 .five{
+   flex-basis: 20%;
+   order: 1 ;
 }
 
