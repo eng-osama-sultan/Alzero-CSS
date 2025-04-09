@@ -9,6 +9,13 @@ Flex Box 46 to 53
       flex-direction: row;
       flex-wrap: nowrap;
       flex-flow: [Flex-Direction] + [Flex-Wrap];
+
+      ------
+      justify-content: flex-start;
+
+      align-items: stretch;
+
+      align-content: stretch;
  
  */
 *{
@@ -27,12 +34,16 @@ Flex Box 46 to 53
    /* flex-direction: row;
    flex-wrap: wrap-reverse; */
    flex-flow: row wrap-reverse;
+   justify-content: space-around;
+   /* align-items: center; */
+   align-content: center;
+   gap: 2px;
 }
 
 .Lesson46 .flex div {
    background-color: red;
    color: white;
-   width: 25%;
+   width: calc(90%/5);
    text-align: center;
    padding: 20px;
 }
@@ -48,8 +59,10 @@ Flex Box 46 to 53
 .Lesson46 .float div {
    background-color: red;
    color: white;
-   width: 25%;
+   width: calc((100% - 20px)  / 5);
    text-align: center;
    padding: 20px;
    float: left;
+   margin-left: 2px;
+   margin-right: 2px;
 }
