@@ -1,89 +1,99 @@
 /* 
-CSS الدروس من 42 إلى 53
-
-Flex Box 46 to 53
+CSS Assignments Lessons 42 - 45
 */
 
- /* Lesson 46 - FlexBox (Parent - Direction - Wrap - Flow)
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      flex-flow: [Flex-Direction] + [Flex-Wrap];
-
-      ------
-      justify-content: flex-start;
-
-      align-items: stretch;
-
-      align-content: stretch;
- 
-
-   Lesson 50 - FlexBox for child (Grow - shrink - Order)
-      flex-grow: 0;
-      flex-shrink: 1;
-      order: 0;
-   
-   Lesson 51 - FlexBox for child (Basis - and flex shorthand)
-      flex-basis: auto;
-
-      flex: [flex-grow] = 0 [flex-shrink] = 1 [flex-basis] = auto or px or %;
-   
-   Lesson 52 - FlexBox for child (align-self and Flex Games and Task)
-      align-self: auto;
-*/
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+ /* التكليف الاول */
+.task1{
+   background-color: white;
+   height: 300px;
+   color: black;
+   padding-top: 100px;
 }
 
-.Lesson50 .flex {
-   overflow: hidden;
+.task1 .parent{
    background-color: #eee;
-   height: 400px;
-   padding: 20px;
-   margin: 20px auto;
-   display: flex;
-
-   gap: 2px;
+   margin: 25px auto;
+   max-width: 80%;
+   padding: 25px;
+   transition: 500ms;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   -o-transition: 500ms;
 }
 
-.Lesson50 .flex div {
-   background-color: red;
-   color: white;
-   width: 80px;
-   text-align: center;
-   padding: 20px;
+.task1 .parent:hover{
+   margin-top: 5px;
+}
+
+
+
+.task1 .parent .child{
+   background-color: #ccc;
+   margin: 10px auto;
+   padding: 25px;
+   transition: 2s;
+   -webkit-transition: 2s;
+   -moz-transition: 2s;
+   -ms-transition: 2s;
+   -o-transition: 2s;
+}
+
+.task1 .parent .child:hover{
+   margin-top: 30px;
+   
+}
+
+
+ /* التكليف الثاني */
+.task2{
+   background-color: white;
+   height: 300px;
+   padding-top: 100px;
+
 
 }
 
-.Lesson50 .one{
-   flex-grow: 3;
-   flex-shrink: 5;
-   order: 5;
+.task2 div{
+   background-color: #ccc !important;
+   max-width: 400px;
+   margin: auto !important;
+   color: transparent !important;
+   border: none !important;
+   font-size: 20px !important;
+   position: relative;
 }
 
-.Lesson50 .two{
-   flex-grow: 2;
-   background-color: green !important;
-   order: 4;
+.task2 div::after{
+   content: 'Osama Sultan';
+   color: black !important;
+   position: absolute;
+   left: 160px;
+   font-weight: bold;
+
 }
 
-.Lesson50  .three{
-   flex-grow: 3;
-   flex-shrink: 2;
-   background-color: blue !important;
-   order: 3;
-}
 
-.Lesson50 .four{
-   flex-basis: auto;
-   order: 2 ;
-}
 
-.Lesson50 .five{
-   flex-basis: 20%;
-   order: 1 ;
-   align-self: center ;
-}
+ /* التكليف الثالث */
+ .task3{
+   background-color: white;
+   height: 300px;
+   color: black;
+   padding-top: 10px;
+
+ }
+
+ :root {
+   --mainColor: #009688;
+   --mainPadding: 10px;
+ }
+ 
+ .task3 div {
+   border: 2px solid var(--mainColor, black);
+   margin: 10px;
+   padding: var(--mainPadding ,15px);
+   text-align: start;
+   color: var(--mainColor, black);
+ }
 
