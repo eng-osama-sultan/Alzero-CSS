@@ -1,319 +1,64 @@
 /* 
-CSS Assignments Lessons 46 - 53
+   Lesson 54 - Filters
 */
 
-/* التكليف الاول */
-.task1 {
-  background-color: white;
-  height: 300px;
-  color: black;
-  padding-top: 100px;
+/* 
+   Filters
+   1. grayscale();
+   2. blur();
+   3. invert();
+  
+*/
+*{
+   box-sizing: border-box;
 }
 
-.task1 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  background-color: #ff5722;
-  margin: auto;
-  border-radius: 50px;
-  color: #ff5722;
-  position: relative;
-  z-index: 1;
-  font-weight: bold;
+img{
+       transition: 0.5s;
+       -webkit-transition: 0.5s;
+       -moz-transition: 0.5s;
+       -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+       filter: grayscale(100%) ;
+       -webkit-filter: grayscale(100%) ;
 }
 
-.task1 div::before {
-  content: "";
-  position: absolute;
-  left: -4px;
-  width: 100px;
-  height: 100px;
-  background-color: #eee;
-  margin: auto;
-  border-radius: 50px;
-  z-index: -1;
+img:hover{
+   filter: grayscale(0);
+   -webkit-filter: grayscale(0);
 }
 
-.task1 div::after {
-  width: 100px;
-  height: 100px;
-  background-color: #03a9f4;
-  margin: auto;
-  border-radius: 50px;
-  position: absolute;
-  right: 8px;
-  content: "";
-  z-index: -2;
-}
 
-/* التكليف الثاني */
-.task2 {
-  background-color: white;
-  height: 600px;
-  padding-top: 100px;
-}
+/* 
+   Lesson 55 - Gradients تدرجات الالوان 
+*/
 
-.task2 .parent {
-  width: 600px;
-  height: 300px;
-  background-color: #eee;
-  margin: auto;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
+/* 
+   Gradients
+   1. Linear-gradient(direction || Angle, color Stop 1, color Stop 2, ...)
 
-.task2 .parent div {
-  width: calc(90% / 3);
-  background-color: red;
-  color: white;
-  margin: auto;
-  padding: 7px;
-}
+*/
 
-/* التكليف الثالث */
-.task3 {
-  background-color: white;
-  height: 600px;
-  color: black;
-  padding-top: 10px;
-}
-
-.task3 .parent {
-  /* width: 600px;
+.gradients{
+   /* background-image: linear-gradient(to right, blue, white); */
+   background-image: linear-gradient(180deg, #0000ff87  30%, white);
+   width: 800px;
    height: 300px;
-   background-color: #eee;
-   margin: auto;
-   padding: 10px;
-   display: flex;
-   flex-wrap: wrap-reverse;
-   align-content: space-between;
-   flex-direction: row-reverse; */
+   
+}  
 
-  width: 600px;
-  height: 300px;
-  background-color: #eee;
-  margin: auto;
-  padding: 10px;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap-reverse;
+
+/* 
+   Lesson 56 - Pointer Events and Caret Color 
+*/
+input{
+   caret-color: #03A9F4;
 }
 
-.task3 .parent div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(88% / 3);
-  background-color: #607d8b;
-  color: white;
-  padding: 7px;
-  margin: 0 5px;
+p{
+   caret-color: #03A9F4;
 }
 
-.task3 .parent .one {
-  align-self: flex-start;
-  order: 1;
-}
-
-.task3 .parent .two {
-  /* align-self: flex-start; */
-  order: 2;
-}
-
-.task3 .parent .three {
-  align-self: flex-end;
-  order: 5;
-}
-.task3 .parent .four {
-  /* align-self: flex-end; */
-  order: 4;
-}
-.task3 .parent .five {
-  /* align-self: flex-end; */
-  order: 3;
-}
-.task3 .parent .six {
-  /* align-self: flex-end; */
-  order: 6;
-}
-
-/* التكليف الرابع */
-.task4 {
-  background-color: white;
-  height: 600px;
-  color: black;
-  padding-top: 10px;
-}
-
-.task4 .parent {
-  height: 300px;
-  width: 600px;
-  background-color: #eee;
-  margin: 10px auto;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.task4 .parent div {
-  padding: 15px;
-  margin: 10px;
-  background-color: #009688;
-  color: white;
-  height: calc(100% / 3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.task4 .parent .two {
-  align-self: flex-start;
-  width: 50%;
-}
-
-/* التكليف الخامس */
-.task5 {
-  background-color: white;
-  height: 600px;
-  color: black;
-  padding-top: 10px;
-}
-
-.task5 .parent {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #ccc;
-  width: 600px;
-  height: 300px;
-  margin: auto;
-  padding: 10px;
-}
-
-.task5 .parent div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-  color: white;
-  width: calc(70% / 4);
-  height: 50%;
-}
-
-.task5 .parent .one {
-  background-color: #ff9800;
-  align-self: flex-start;
-  order: 3;
-}
-
-.task5 .parent .two {
-  background-color: #8bc34a;
-  align-self: flex-end;
-  order: 2;
-}
-
-.task5 .parent .three {
-  background-color: #795548;
-  align-self: flex-start;
-  order: 1;
-}
-
-.task5 .parent .four {
-  background-color: #673ab7;
-  align-self: flex-end;
-  order: 4;
-}
-
-/* التكليف السادس */
-.task6 {
-  background-color: white;
-  height: 600px;
-  color: black;
-  padding-top: 10px;
-}
-
-.task6 .page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 550px;
-  padding: 10px;
-}
-
-.task6 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.task6 .header .logo {
-   background-color: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-   height: 27.5px;
-  padding: 10px;
-  margin-right: 17px;
-  padding: 10p;
-}
-
-.task6 .header .links {
-  background-color: #ccc;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 27.5px;
-  gap: 2;
-  margin: 0px;
-  padding: 10px;
-  flex-grow: 1;
-}
-
-
-.task6 .header .links li {
-   list-style-type: none;
-    margin-right: 10px;
- }
-
-.task6 .main-area {
-  display: flex;
-  flex-direction: row;
-  /* background-color: #ccc; */
-  height: 75%;
-}
-
-.task6 .main-area .content {
-   display: flex;
-   flex-direction: row;
-   background-color: #ccc;
-   flex-grow: 2;
-   margin-right: 10px;
-   padding: 10px;
-
- }
-
- .task6 .main-area .sidebar {
-   display: flex;
-   flex-direction: row;
-   background-color: #ccc;
-   flex-grow: 1;
-   padding: 10px;
- }
-
-.task6 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #ccc;
-  height: 5%;
-  padding: 10px;
+a{
+   pointer-events: none;
 }
