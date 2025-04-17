@@ -1,64 +1,169 @@
 /* 
-   Lesson 54 - Filters
+   Lessons 57 to 64 - Grid Layout
 */
 
 /* 
-   Filters
-   1. grayscale();
-   2. blur();
-   3. invert();
+ Lessons 57 to 59 - Grid for parent
+   Grid (Parent)
+   1. display: grid
+   2. grid-template-columns: ( px, %, Auto, Fraction, Repeat(), Mix)
+   3. grid-template-row: ( px, %, Auto, Fraction, Repeat(), Mix)
+   4. gap : [row-gap] [column-gap]
+   5. justify-content: ;
+   6. align-content:  ;
+   7. grid-template-areas: ;
+
+   Grid (Parent)
+   1. grid-column: [Grid Column Start] [Grid Column End] ;
+   2. grid-row: [Grid Row Start] [Grid Row End] ;
+   3. grid-area: [Grid Row Start] [Grid Column Start] [Grid Row End] [Grid Column End];
   
 */
-*{
-   box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
 }
 
-img{
-       transition: 0.5s;
-       -webkit-transition: 0.5s;
-       -moz-transition: 0.5s;
-       -ms-transition: 0.5s;
-       -o-transition: 0.5s;
-       filter: grayscale(100%) ;
-       -webkit-filter: grayscale(100%) ;
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(2, auto);
+  /* row-gap: 10px;
+   column-gap: 10px; */
+  gap: 10px 10px;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
-img:hover{
-   filter: grayscale(0);
-   -webkit-filter: grayscale(0);
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+
 }
 
+/* Lessons 60 - Full Layout with grid-template-areas</h2> */
+ul{
+   list-style: none;
+}
 
-/* 
-   Lesson 55 - Gradients تدرجات الالوان 
-*/
+ul li{
+   display: inline-block;
+}
 
-/* 
-   Gradients
-   1. Linear-gradient(direction || Angle, color Stop 1, color Stop 2, ...)
+.parent-leson60 {
+  margin: 20px auto;
+  padding: 10px;
+  width: 800px;
+  height: 500px;
+  background-color: #eee;
+}
 
-*/
+.parent-leson60 .page{
+   height: 100%;
+   display: grid;
+   grid-template-columns:repeat(10, 1fr) ;
+   grid-template-rows: 50px auto 50px;
+   grid-template-areas: 
+   "logo logo nav  nav nav nav nav nav nav nav"
+   "cont cont cont cont cont cont cont . side side"
+   "footer footer footer footer footer footer footer footer footer footer"
+   ;
+   gap: 10px 5px;
 
-.gradients{
-   /* background-image: linear-gradient(to right, blue, white); */
-   background-image: linear-gradient(180deg, #0000ff87  30%, white);
-   width: 800px;
-   height: 300px;
+}
+
+h3{
+   grid-area: logo;
+   background-color: red;
+
+}
+
+nav{
+   grid-area: nav;
+   background-color: blue;
+
+}
+
+section{
+   grid-area: cont;
+   background-color: blueviolet;
    
-}  
-
-
-/* 
-   Lesson 56 - Pointer Events and Caret Color 
-*/
-input{
-   caret-color: #03A9F4;
 }
 
-p{
-   caret-color: #03A9F4;
+aside{
+   grid-area: side;
+   background-color: gold;
 }
 
-a{
-   pointer-events: none;
+footer{
+   grid-area: footer;
+   background-color: aqua;
+}
+
+/* Lessons 61 to 64 - Grid for child */
+.parent-lessons-61-64{
+   margin: 20px auto;
+   padding: 10px;
+   width: 800px;
+   height: 500px;
+   background-color: #eee;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr) minmax(100px, 300px);
+   gap: 10px;
+}
+
+.parent-lessons-61-64 .parent{
+
+}
+
+.parent-lessons-61-64 div{
+   background-color: red;
+   color: white;
+   padding: 20px;
+   font-size: 30px;
+   font-weight: bold;
+   align-content: center;
+}
+
+.parent-lessons-61-64 div:first-child {
+   background-color: blue;
+   grid-column: 2 / span 3;
+   grid-row: span 2;
+   align-content: center;
+}
+
+.parent-lessons-61-64 div:nth-child(4) {
+   background-color: purple;
+   grid-row: 1 /  span 3;
+   align-content: center;
+}
+
+/* Auto fill */
+.auto-fill{
+   margin: 20px auto;
+   padding: 10px;
+   /* width: 800px; */
+   height: 500px;
+   background-color: #eee;
+   display: grid;
+   grid-template-columns: minmax(300px,700px) repeat(auto-fill, minmax(50px,300px));
+   gap: 10px;
+}
+
+.auto-fill div{
+   background-color: red;
+   color: white;
+   padding: 20px;
+   font-size: 30px;
+   font-weight: bold;
+   align-content: center;
 }
