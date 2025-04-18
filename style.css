@@ -1,24 +1,7 @@
 /* 
-   Lessons 57 to 64 - Grid Layout
+   CSS Assignments Lessons 54 - 56
 */
 
-/* 
- Lessons 57 to 59 - Grid for parent
-   Grid (Parent)
-   1. display: grid
-   2. grid-template-columns: ( px, %, Auto, Fraction, Repeat(), Mix)
-   3. grid-template-row: ( px, %, Auto, Fraction, Repeat(), Mix)
-   4. gap : [row-gap] [column-gap]
-   5. justify-content: ;
-   6. align-content:  ;
-   7. grid-template-areas: ;
-
-   Grid (Parent)
-   1. grid-column: [Grid Column Start] [Grid Column End] ;
-   2. grid-row: [Grid Row Start] [Grid Row End] ;
-   3. grid-area: [Grid Row Start] [Grid Column Start] [Grid Row End] [Grid Column End];
-  
-*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,144 +9,88 @@
   
 }
 
-.parent {
-  margin: 20px auto;
-  width: 800px;
-  height: 500px;
-  background-color: #eee;
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: repeat(2, auto);
-  /* row-gap: 10px;
-   column-gap: 10px; */
-  gap: 10px 10px;
-  justify-content: space-between;
-  align-content: space-between;
+.task1 {
+   background-color: white;
+   color: black;
+   height: 300px;
+   padding-top: 100px;
 }
 
-.parent div {
-  background-color: red;
-  color: white;
-  padding: 20px;
-  font-size: 30px;
-  font-weight: bold;
-
-}
-
-/* Lessons 60 - Full Layout with grid-template-areas</h2> */
-ul{
-   list-style: none;
-}
-
-ul li{
-   display: inline-block;
-}
-
-.parent-leson60 {
-  margin: 20px auto;
-  padding: 10px;
-  width: 800px;
-  height: 500px;
-  background-color: #eee;
-}
-
-.parent-leson60 .page{
-   height: 100%;
-   display: grid;
-   grid-template-columns:repeat(10, 1fr) ;
-   grid-template-rows: 50px auto 50px;
-   grid-template-areas: 
-   "logo logo nav  nav nav nav nav nav nav nav"
-   "cont cont cont cont cont cont cont . side side"
-   "footer footer footer footer footer footer footer footer footer footer"
-   ;
-   gap: 10px 5px;
-
-}
-
-h3{
-   grid-area: logo;
-   background-color: red;
-
-}
-
-nav{
-   grid-area: nav;
-   background-color: blue;
-
-}
-
-section{
-   grid-area: cont;
-   background-color: blueviolet;
-   
-}
-
-aside{
-   grid-area: side;
-   background-color: gold;
-}
-
-footer{
-   grid-area: footer;
-   background-color: aqua;
-}
-
-/* Lessons 61 to 64 - Grid for child */
-.parent-lessons-61-64{
-   margin: 20px auto;
-   padding: 10px;
-   width: 800px;
-   height: 500px;
+.task1 div {
+   position: relative;
+   width: 600px;
+   margin: auto;
+   padding: 25px;
    background-color: #eee;
-   display: grid;
-   grid-template-columns: repeat(5, 1fr) minmax(100px, 300px);
-   gap: 10px;
-}
-
-.parent-lessons-61-64 .parent{
-
-}
-
-.parent-lessons-61-64 div{
-   background-color: red;
-   color: white;
-   padding: 20px;
-   font-size: 30px;
+   border-left: 5px solid #F44336;
+   border-right: 5px solid #673AB7;
+   font-size: 50px;
    font-weight: bold;
-   align-content: center;
 }
 
-.parent-lessons-61-64 div:first-child {
-   background-color: blue;
-   grid-column: 2 / span 3;
-   grid-row: span 2;
-   align-content: center;
+.task1 div::before {
+   content: "";
+   height: 5px;
+   width: 598px;
+   background-image: linear-gradient(to right, #F44336 20%, #2196F3 20%, #2196F3 40%, #4DB051 40%, #4DB051 60%, #EA1F64 60%, #EA1F64 80%, #673AB7 10%);
+   position: absolute;
+   top: 0px;
+   left: -3px;
 }
 
-.parent-lessons-61-64 div:nth-child(4) {
-   background-color: purple;
-   grid-row: 1 /  span 3;
-   align-content: center;
+.task1 div::after {
+   content: "";
+   height: 5px;
+   width: 598px;
+   background-image: linear-gradient(to right, #F44336 20%, #2196F3 20%, #2196F3 40%, #4DB051 40%, #4DB051 60%, #EA1F64 60%, #EA1F64 80%, #673AB7 10%);
+   position: absolute;
+   top: 103px;
+   left: -4px;
 }
 
-/* Auto fill */
-.auto-fill{
-   margin: 20px auto;
-   padding: 10px;
-   /* width: 800px; */
-   height: 500px;
+.task1 div::first-letter {
+   color: orange;
+}
+
+
+.task2 {
+   background-color: white;
+   color: black;
+   height: 600px;
+   padding-top: 100px;
+}
+
+
+input:focus{
+   outline: none;
+  
+}
+
+.task2 input {
+   /* display: block; */
+   margin: 10px auto;
    background-color: #eee;
-   display: grid;
-   grid-template-columns: minmax(300px,700px) repeat(auto-fill, minmax(50px,300px));
-   gap: 10px;
+   color: black;
+   height: 50px;
+   width: 600px;
+   padding: 30px 20px;
+   border: none;
+   font-size: 20px;
+   border: none;
+   caret-color: #F44336 ;
+
 }
 
-.auto-fill div{
-   background-color: red;
-   color: white;
-   padding: 20px;
-   font-size: 30px;
-   font-weight: bold;
-   align-content: center;
+.task2 div{
+   position: relative;
+}
+
+.task2 div::after {
+   content: "";
+   position: absolute;
+   height: 3px;
+   width: 600px;
+   bottom: 10px;
+   left: 111px;
+   background-image: linear-gradient(to right, #F44336 50%, #019789 50%);
 }
