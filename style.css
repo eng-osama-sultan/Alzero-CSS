@@ -1,5 +1,5 @@
 /* 
-   CSS Assignments Lessons 57 - 64
+   Lessons 65 to 73 - Transform 2D and 3D64
 */
 
 * {
@@ -9,403 +9,284 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*  Task1 */
-.task1 {
+/* 2D Transform - Scale */
+/* 
+  transform:scalex();
+  transform:scaley();
+  transform:scale();
+*/
+.page {
+  position: relative;
   background-color: white;
   color: black;
   height: 600px;
-  padding-top: 100px;
-}
-
-.task1 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 10%);
-  gap: 20px;
-  background-color: #ddd;
-  margin: auto;
-  padding: 20px;
-  width: 800px;
-  height: 400px;
-}
-
-.task1 .grid div {
-  background-color: #607d8b;
-}
-
-.task1 .grid div:nth-child(1)::before {
-  content: "Element 1";
+  width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  height: 100%;
-}
-
-.task1 .grid div:nth-child(2)::before {
-  content: "Element 2";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  height: 100%;
-}
-
-.task1 .grid div:nth-child(3)::before {
-  content: "Element 3";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  height: 100%;
-}
-
-.task1 .grid div:nth-child(4) {
-  grid-row: 2 / -1;
-}
-
-.task1 .grid div:nth-child(4)::before {
-  content: "Element 4";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  height: 100%;
-}
-
-.task1 .grid div:nth-child(5) {
-  grid-row: 2 / -1;
-}
-
-.task1 .grid div:nth-child(5)::before {
-  content: "Element 5";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  height: 100%;
-}
-
-.task1 .grid div:nth-child(6) {
-  grid-row: 2 / -1;
-}
-
-.task1 .grid div:nth-child(6)::before {
-  content: "Element 6";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  height: 100%;
-}
-
-/* Task2 */
-.task2 {
-  background-color: white;
-  width: 80%;
-  height: 600px;
   margin: auto;
 }
 
-.task2 .layout {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 8% repeat(5, 1fr) 8%;
-  height: 100%;
-  text-align: start;
-}
-
-.task2 .layout header {
-  background-color: #03a9f4;
-  grid-column: 1 / -1;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 20px;
-  font-size: 15px;
-}
-
-.task2 .layout header::before {
-  content: "Header";
-}
-
-.task2 .layout section {
-  background-color: #ff5722;
-  grid-column: 1/4;
-  grid-row: 2 / 7;
-  padding-top: 15px;
-  padding-left: 20px;
-  font-size: 15px;
-}
-
-.task2 .layout section::before {
-  content: "Section";
-}
-
-.task2 .layout aside {
-  background-color: #607d8b;
-  grid-column: 4;
-  grid-row: 2 / 7;
-  padding-top: 15px;
-  padding-left: 20px;
-  font-size: 15px;
-}
-
-.task2 .layout aside::before {
-  content: "Aside";
-}
-
-.task2 .layout footer {
-  background-color: #009688;
-  grid-column: 1/-1;
-  grid-row: 7/-1;
-  padding-top: 15px;
-  padding-left: 20px;
-  font-size: 15px;
-}
-
-.task2 .layout footer::before {
-  content: "Footer";
-}
-
-/* Task3 */
-.task3 {
-  background-color: white;
-  color: black;
-  height: 600px;
-  padding-top: 100px;
-}
-
-.task3 .grid {
-  background-color: #ddd;
-  padding: 20px;
-  width: 800px;
-  height: 400px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 2% repeat(2, 1fr) 2%;
-  grid-template-rows: 90% 7%;
-  gap: 20px;
-}
-
-.task3 .grid div {
-  background-color: #403f3f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.page .Scale {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(255 0 0 / 39%);
   color: white;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-/* Task4 */
-.task4 {
-  background-color: white;
-  color: black;
-  height: 600px;
-  padding-top: 100px;
-}
-
-.task4 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 20px;
-  background-color: #ddd;
-  padding: 20px;
-  width: 800px;
-  height: 400px;
-  margin: auto;
-}
-
-.task4 .grid div {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: #2196f3;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+
+  transform: scale(-1.5) ;
+  -webkit-transform: scale(-1.5) ;
+  -moz-transform: scale(-1.5) ;
+  -ms-transform: scale(-1.5) ;
+  -o-transform: scale(-1.5) ;
 }
 
-.task4 .grid .one {
-  grid-column: 1 / -1;
-  grid-row: 6 / -1;
+.page .Scale:hover {
+  transform: scale(1.5) ;
+  -webkit-transform: scale(1.5) ;
+  -moz-transform: scale(1.5) ;
+  -ms-transform: scale(1.5) ;
+  -o-transform: scale(1.5) ;
 }
 
-.task4 .grid .two {
-  grid-column: 1 / 3;
-}
+/* 2D Transform - Scale */
+/* 
+  transform:rotatex( deg - rad - grad - turn );
+  transform:rotatey( deg - rad - grad - turn );
+  transform:rotate( deg - rad - grad - turn );
 
-.task4 .grid .five {
-  grid-column: 2 / -1;
-  grid-row: 3 / 6;
-}
+  - deg => Degrees
+  - rad => Radians
+  - grad => Gradians
+  - rurn => 1 turn 
+*/
 
-.task4 .grid .eight {
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
-}
-
-/* Task5 */
-.task5 {
-  background-color: white;
-  color: black;
-  height: 600px;
-  padding-top: 100px;
-}
-
-.task5 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  background-color: #ddd;
-  padding: 20px;
-  width: 800px;
-  height: 400px;
-  margin: auto;
-  align-content: space-between;
-}
-
-.task5 .grid div {
+.page .rotate {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: #e91e63;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transform: rotate(-45deg) ;
+  -webkit-transform: rotate(-45deg) ;
+  -moz-transform: rotate(-45deg) ;
+  -ms-transform: rotate(-45deg) ;
+  -o-transform: rotate(-45deg) ;
 }
 
-/* Task6 */
-.task6 {
-  background-color: white;
-  color: black;
-  height: 100%;
-  padding-top: 25px;
+.page .rotate:hover {
+  transform: rotate(45deg) scale(1.5) ;
+  -webkit-transform: rotate(45deg) scale(1.5) ;
+  -moz-transform: rotate(45deg) scale(1.5) ;
+  -ms-transform: rotate(45deg) scale(1.5) ;
+  -o-transform: rotate(45deg) scale(1.5) ;
 }
 
-.task6 .grid {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(12, 1fr) ;
-   gap: 10px;
-   background-color: #ddd;
-   padding: 20px;
-   width: 90%;
-   height: 100%;
-   margin: auto; 
-   
- }
+/* 2D Transform - translate */
+/* 
+  transform:translatex(  );
+  transform:translatey(  );
+  transform:translate(  );
 
- .task6 .grid div{
-   background-color: white;
-   text-align: start;
-   padding: 15px;
-   border-bottom: 4px solid #ff5722;
-   position: relative;
-   /* font-size: 16px; */
-   line-height: 30px;
-   
- }
+*/
 
- .task6 .grid div::after{
-   content: '″';
-   position: absolute;
-   right: 15px;
-   bottom: -10px;
-   font-size: 50px;
-   color: gray;
- }
+.page .translate {
+  width: 60%;
+  height: 60%;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transform: translate(-100px, -100px);
+  -webkit-transform: translate(-100px, -100px);
+  -moz-transform: translate(-100px, -100px);
+  -ms-transform: translate(-100px, -100px);
+  -o-transform: translate(-100px, -100px);
+}
 
- .task6 .grid div h6{
-   color: gray;
-   padding-top: 5px;
- }
-
- .task6 .grid .description{
-   color: gray;
-   padding-top: 5px;
- }
-
- .task6 .grid .title{
-   font-weight: bold;
-   color: black;
-   padding: 15px 0;
-   
- }
-
- .task6 .grid .title-bk{
-   font-weight: bold;
-   color: white;
-   padding: 15px 0;
-   
- }
+.page .translate:hover {
+  transform: translate(100px, 100px);
+  -webkit-transform: translate(100px, 100px);
+  -moz-transform: translate(100px, 100px);
+  -ms-transform: translate(100px, 100px);
+  -o-transform: translate(100px, 100px);
+}
 
 
- .task6 .grid .osama-sultan {
-   grid-column: 1 / 3;
-   grid-row: 1 / 3
-   
+/* 2D Transform - Skew */
+/* 
+  transform:skewx(  );
+  transform:skewy(  );
+  transform:skew(  );
 
- }
+*/
 
- .task6 .grid .yaser-sultan{
-   grid-row: 1 / 3
- }
+.page .skew {
+  width: 60%;
+  height: 60%;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transform: skewy(-22deg);
+  -webkit-transform: skewy(-22deg);
+  -moz-transform: skewy(-22deg);
+  -ms-transform: skewy(-22deg);
+  -o-transform: skewy(-22deg);
+}
 
- .task6 .grid .anas-sultan {
-   grid-column: 4 / -1;
-   grid-row: 1 / 10;
-   background-color: black;
-   color: white;
- }
-
- .task6 .grid .ahmed-adnan {
-   grid-row: 3 / 10;
-   
- }
-
- .task6 .grid .aiman-adnan {
-   grid-column: 2 / 4;
-   grid-row: 3 / 6;
-   background-color: black;
-   color: white !important;
-   
- }
+.page .skew:hover {
+  transform: skewy(22deg);
+  -webkit-transform: skewy(22deg);
+  -moz-transform: skewy(22deg);
+  -ms-transform: skewy(22deg);
+  -o-transform: skewy(22deg);
+}
 
 
- .task6 .grid .hesham-adnan {
-   grid-column: 2 / 4;
-   grid-row: 6 / 10;
-   
- }
+/* 2D Transform - Matrix */
+/* 
+  transform:matrix( scalex, skewy, skewx, scaley, translatex, translatey  );
 
- .task6 .grid .ali-adnan {
-   grid-row: 10 / -1;
- }
 
- .task6 .grid .abdurahman-ziad {
-   grid-row: 10 / -1;
-   background-color: black;
-   color: white ;  
- }
 
- .task6 .grid .abdulmajed-ziad {
-   grid-row: 10 / -1;
- }
+*/
 
- .task6 .grid .arkan {
-   grid-row: 10 / -1;
- }
+.page .matrix {
+  width: 60%;
+  height: 60%;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  /* transform: matrix(1,0,0,1,0,0);
+  -webkit-transform: matrix(1,0,0,1,0,0);
+  -moz-transform: matrix(1,0,0,1,0,0);
+  -ms-transform: matrix(1,0,0,1,0,0);
+  -o-transform: matrix(1,0,0,1,0,0); */
+}
+
+.page .matrix:hover {
+  transform: matrix(1.5,.3,.3,1.5,100,100);
+  -webkit-transform: matrix(1.5,.3,.3,1.5,100,100);
+  -moz-transform: matrix(1.5,.3,.3,1.5,100,100);
+  -ms-transform: matrix(1.5,.3,.3,1.5,100,100);
+  -o-transform: matrix(1.5,.3,.3,1.5,100,100);
+}
+
+/* 2D Transform - Origin */
+/* 
+  transform-origin(x, y, z)
+
+  X-Asis
+  -css unit [px, em, rem]
+  -keyword
+    [
+      Left = 0%
+      Center = 50%
+      Right = 100%
+    ]
+
+  Y-Asis
+  -css unit [px, em, rem]
+  -keyword
+    [
+      Top = 0%
+      Center = 50%
+      Bottom = 100%
+    ]
+
+
+
+*/
+
+.page .origin {
+    width: 60%;
+    height: 60%;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transform-origin: 0 50%;
+    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+}
+
+.page .origin:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+span{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: 20%;
+  top: 50%;
+}
+
+
+
+
