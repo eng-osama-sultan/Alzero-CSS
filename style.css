@@ -9,423 +9,230 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 2D Transform - Scale */
-/* 
-  transform:scalex();
-  transform:scaley();
-  transform:scale();
-*/
-.page {
-  position: relative;
+
+
+
+.task1 {
   background-color: white;
-  color: black;
+  /* color: black; */
   height: 600px;
   width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  position: relative;
+  z-index: 0;
 }
 
-.page .Scale {
-  width: 50%;
-  height: 50%;
-  background-color: rgb(255 0 0 / 39%);
-  color: white;
+.task1 div {
+  position: relative;
+  background-color: #eee;
+  height: 200px;
+  width: 300px;
+  color: #03A9F4;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  margin: 10px auto;
   font-size: 30px;
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
-
-  transform: scale(-1.5);
-  -webkit-transform: scale(-1.5);
-  -moz-transform: scale(-1.5);
-  -ms-transform: scale(-1.5);
-  -o-transform: scale(-1.5);
-}
-
-.page .Scale:hover {
-  transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-}
-
-/* 2D Transform - Scale */
-/* 
-  transform:rotatex( deg - rad - grad - turn );
-  transform:rotatey( deg - rad - grad - turn );
-  transform:rotate( deg - rad - grad - turn );
-
-  - deg => Degrees
-  - rad => Radians
-  - grad => Gradians
-  - rurn => 1 turn 
-*/
-
-.page .rotate {
-  width: 50%;
-  height: 50%;
-  background-color: rgb(255 0 0 / 39%);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: bold;
-  font-size: 30px;
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
 }
 
-.page .rotate:hover {
-  transform: rotate(45deg) scale(1.5);
-  -webkit-transform: rotate(45deg) scale(1.5);
-  -moz-transform: rotate(45deg) scale(1.5);
-  -ms-transform: rotate(45deg) scale(1.5);
-  -o-transform: rotate(45deg) scale(1.5);
-}
-
-/* 2D Transform - translate */
-/* 
-  transform:translatex(  );
-  transform:translatey(  );
-  transform:translate(  );
-
-*/
-
-.page .translate {
-  width: 60%;
-  height: 60%;
-  background-color: rgb(255 0 0 / 39%);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
-  transform: translate(-100px, -100px);
-  -webkit-transform: translate(-100px, -100px);
-  -moz-transform: translate(-100px, -100px);
-  -ms-transform: translate(-100px, -100px);
-  -o-transform: translate(-100px, -100px);
-}
-
-.page .translate:hover {
-  transform: translate(100px, 100px);
-  -webkit-transform: translate(100px, 100px);
-  -moz-transform: translate(100px, 100px);
-  -ms-transform: translate(100px, 100px);
-  -o-transform: translate(100px, 100px);
-}
-
-/* 2D Transform - Skew */
-/* 
-  transform:skewx(  );
-  transform:skewy(  );
-  transform:skew(  );
-
-*/
-
-.page .skew {
-  width: 60%;
-  height: 60%;
-  background-color: rgb(255 0 0 / 39%);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
-  transform: skewy(-22deg);
-  -webkit-transform: skewy(-22deg);
-  -moz-transform: skewy(-22deg);
-  -ms-transform: skewy(-22deg);
-  -o-transform: skewy(-22deg);
-}
-
-.page .skew:hover {
-  transform: skewy(22deg);
-  -webkit-transform: skewy(22deg);
-  -moz-transform: skewy(22deg);
-  -ms-transform: skewy(22deg);
-  -o-transform: skewy(22deg);
-}
-
-/* 2D Transform - Matrix */
-/* 
-  transform:matrix( scalex, skewy, skewx, scaley, translatex, translatey  );
-
-
-
-*/
-
-.page .matrix {
-  width: 60%;
-  height: 60%;
-  background-color: rgb(255 0 0 / 39%);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
-  /* transform: matrix(1,0,0,1,0,0);
-  -webkit-transform: matrix(1,0,0,1,0,0);
-  -moz-transform: matrix(1,0,0,1,0,0);
-  -ms-transform: matrix(1,0,0,1,0,0);
-  -o-transform: matrix(1,0,0,1,0,0); */
-}
-
-.page .matrix:hover {
-  transform: matrix(1.5, 0.3, 0.3, 1.5, 100, 100);
-  -webkit-transform: matrix(1.5, 0.3, 0.3, 1.5, 100, 100);
-  -moz-transform: matrix(1.5, 0.3, 0.3, 1.5, 100, 100);
-  -ms-transform: matrix(1.5, 0.3, 0.3, 1.5, 100, 100);
-  -o-transform: matrix(1.5, 0.3, 0.3, 1.5, 100, 100);
-}
-
-/* 2D Transform - Origin */
-/* 
-  transform-origin(x, y, z)
-
-  X-Asis
-  -css unit [px, em, rem]
-  -keyword
-    [
-      Left = 0%
-      Center = 50%
-      Right = 100%
-    ]
-
-  Y-Asis
-  -css unit [px, em, rem]
-  -keyword
-    [
-      Top = 0%
-      Center = 50%
-      Bottom = 100%
-    ]
-
-
-
-*/
-
-.page .origin {
-  width: 60%;
-  height: 60%;
-  background-color: rgb(255 0 0 / 39%);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
-  transform-origin: 0 50%;
-  transform: rotate(50deg);
-  -webkit-transform: rotate(50deg);
-  -moz-transform: rotate(50deg);
-  -ms-transform: rotate(50deg);
-  -o-transform: rotate(50deg);
-}
-
-.page .origin:hover {
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-}
-
-span {
+.task1 div::before {
+  content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: red;
+  background-color: #03A9F4;
+  height: 100%;
+  width: 100%;
+  transform: rotate(-6deg);
+  z-index: -1;
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+}
+
+.task1 div::after {
+  content: "";
+  position: absolute;
+  background-color: #e91e63;
+  height: 100%;
+  width: 100%;
+  transform: rotate(6deg);
+  z-index: -2;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+}
+
+/*    التكليف 2 */
+.task2{
+  background-color: white;
+  /* color: black; */
+  height: 600px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.task2 div{
+  position: relative;
+  background-color: #eee;
+  height: 200px;
+  width: 200px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  font-size: 30px;
+  font-weight: bold;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  left: 20%;
-  top: 50%;
+
 }
 
-/* 3D Transform - Rotate and Trainings */
-/* 
-
-*/
-.page .rotate-3d {
-  width: 60%;
-  height: 60%;
-  background-color: rgb(255 0 0 / 39%);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-  transform: rotate3d(0, 0, 1, 0deg);
-  -webkit-transform: rotate3d(0, 0, 1, 0deg);
-  -moz-transform: rotate3d(0, 0, 1, 0deg);
-  -ms-transform: rotate3d(0, 0, 1, 0deg);
-  -o-transform: rotate3d(0, 0, 1, 0deg);
-  transition: 3s;
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
-
-  box-shadow: 20px 20px 17px 15px blue;
-}
-
-.page .rotate-3d:hover {
-  transform: rotate3d(1, 1, 1, 180deg);
-  -webkit-transform: rotate3d(1, 1, 1, 180deg);
-  -moz-transform: rotate3d(1, 1, 1, 180deg);
-  -ms-transform: rotate3d(1, 1, 1, 180deg);
-  -o-transform: rotate3d(1, 1, 1, 180deg);
-}
-
-/* 3D Transform - Translate && Perspective && Origin */
-.page-3d {
-  position: relative;
-  background-color: white;
-  color: black;
-  height: 600px;
-  width: 600px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  margin: auto;
-  perspective-origin: top left;
-  perspective: 300px;
-}
-.page-3d .translate-3d {
-  width: 60%;
-  height: 60%;
-  background-color: rgb(255 0 0 / 39%);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 2s;
-  transform: translate3d(0px, 0px, 2px);
-  -webkit-transform: translate3d(0px, 0px, 2px);
-  -moz-transform: translate3d(0px, 0px, 2px);
-  -ms-transform: translate3d(0px, 0px, 2px);
-  -o-transform: translate3d(0px, 0px, 2px);
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
-}
-
-.page-3d .translate-3d:hover {
-  transform: translate3d(0, 0, 120px);
-  -webkit-transform: translate3d(0, 0, 120px);
-  -moz-transform: translate3d(0, 0, 120px);
-  -ms-transform: translate3d(0, 0, 120px);
-  -o-transform: translate3d(0, 0, 120px);
-}
-
-/*  3D Transform - Backface-Visibility - Transform-style - Flip Product */
-.flip{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: white;
-  color: black;
-  height: 600px;
-  width: 600px;
-  margin: auto;
-}
-
-.box{
-  position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
-
-  transform-origin: right center;
-}
-
-.box:hover{
-  /*transform: rotateY(-180deg);
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
-  */transform: translateX(-100%) rotateY(180deg) ;
-}
-
-.box .face{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.task2 div::before {
+  content: "";
   position: absolute;
+  /*background-color: #03A9F4;
+  */height: 100%;
   width: 100%;
-  height: 100%;
-  color: white;
-  font-weight: bold;
+  transform: rotate(-6deg);
+  z-index: -1;
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  border: 10px solid;
+  border-color: #e91e63 #e91e63 #e91e63 transparent;
+  border-radius: 50%;
+
+
+
+}
+
+
+
+.task2 div::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  height: 110%;
+  width: 110%;
+  transform: rotate(6deg);
+  z-index: -2;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+
+  border: 10px solid ;
+  border-color: #2196F3 transparent #2196F3 #2196F3;
+  border-radius: 50%;
+}
+
+
+/*    التكليف 3 */
+.task3{
+  background-color: white;
+  /* color: black; */
+  height: 600px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.task3 div{
+  position: relative;
+  background-color: #eee;
+  height: 200px;
+  width: 200px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
   font-size: 30px;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
-.box .front{
-  background-color: red;
-
+.task3 div::before {
+  content: "";
+  position: absolute;
+  /*background-color: #03A9F4;
+  */height: 100%;
+  width: 100%;
+  transform: rotate(-6deg);
+  z-index: -1;
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  border: 10px solid;
+  border-color: #e91e63 #e91e63 #e91e63 transparent;
+  border-radius: 50%;
+  transition: .5s ;
+  -webkit-transition: .5s ;
+  -moz-transition: .5s ;
+  -ms-transition: .5s ;
+  -o-transition: .5s ;
 }
 
-.box .back{
-  background-color: green;
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
+.task3 div:hover::before{
+  transform: rotate(1turn);
+  -webkit-transform: rotate(1turn);
+  -moz-transform: rotate(1turn);
+  -ms-transform: rotate(1turn);
+  -o-transform: rotate(1turn);
 }
 
+.task3 div::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  height: 110%;
+  width: 110%;
+  transform: rotate(6deg);
+  z-index: -2;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+  border: 10px solid ;
+  border-color: #2196F3 transparent #2196F3 #2196F3;
+  border-radius: 50%;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+
+  transition-delay: .5s;
+}
+
+.task3 div:hover::after{
+  transform: rotate(1turn);
+  -webkit-transform: rotate(1turn);
+  -moz-transform: rotate(1turn);
+  -ms-transform: rotate(1turn);
+  -o-transform: rotate(1turn);
+}
