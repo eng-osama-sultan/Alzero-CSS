@@ -1,5 +1,5 @@
 /* 
-   Lessons 65 to 73 - Transform 2D and 3D64
+   CSS Assignments Lessons 68 - 73
 */
 
 * {
@@ -9,13 +9,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
 .task1 {
   background-color: white;
   /* color: black; */
-  height: 600px;
+  height: 300px;
   width: 600px;
   display: flex;
   justify-content: center;
@@ -25,53 +22,59 @@
   z-index: 0;
 }
 
-.task1 div {
-  position: relative;
-  background-color: #eee;
-  height: 200px;
-  width: 300px;
-  color: #03A9F4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.task1 h1 {
+  --primary-background: #ff5722;
+  width: 150px;
   margin: 10px auto;
-  font-size: 30px;
-  font-weight: bold;
+  background-color: var(--primary-background);
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  padding: 20px;
+  font-size: 19px;
+  position: relative;
 }
 
-.task1 div::before {
+.task1 h1::before {
   content: "";
-  position: absolute;
-  background-color: #03A9F4;
-  height: 100%;
   width: 100%;
-  transform: rotate(-6deg);
+  height: 100%;
+  background-color: var(--primary-background);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skew(10deg, 10deg);
+  -webkit-transform: skew(10deg, 10deg);
+  -moz-transform: skew(10deg, 10deg);
+  -ms-transform: skew(10deg, 10deg);
+  -o-transform: skew(10deg, 10deg);
   z-index: -1;
-  -webkit-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
-  -ms-transform: rotate(-6deg);
-  -o-transform: rotate(-6deg);
 }
 
-.task1 div::after {
+.task1 h1::after {
   content: "";
-  position: absolute;
-  background-color: #e91e63;
-  height: 100%;
   width: 100%;
-  transform: rotate(6deg);
-  z-index: -2;
-  -webkit-transform: rotate(6deg);
-  -moz-transform: rotate(6deg);
-  -ms-transform: rotate(6deg);
-  -o-transform: rotate(6deg);
+  height: 100%;
+  background-color: var(--primary-background);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skew(-10deg, -10deg);
+  -webkit-transform: skew(-10deg, -10deg);
+  -moz-transform: skew(-10deg, -10deg);
+  -ms-transform: skew(-10deg, -10deg);
+  -o-transform: skew(-10deg, -10deg);
+  z-index: -1;
 }
 
 /*    التكليف 2 */
-.task2{
+.task2 {
   background-color: white;
   /* color: black; */
-  height: 600px;
+  height: 300px;
   width: 600px;
   display: flex;
   justify-content: center;
@@ -81,72 +84,75 @@
   z-index: 0;
 }
 
-.task2 div{
+.task2 h1 {
+  --primary-background: #009688;
+  width: 150px;
+  margin: 10px auto;
+  background-color: var(--primary-background);
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  padding: 20px;
+  font-size: 19px;
   position: relative;
-  background-color: #eee;
-  height: 200px;
-  width: 200px;
+}
+
+.task2 h1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-background);
+  position: absolute;
+  top: 0;
+  left: -12px;
+  transform: skew(20deg);
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  z-index: -1;
+}
+
+.task2 h1::after {
+  content: "";
+  width: 15%;
+  height: 100%;
+  background-color: var(--primary-background);
+  position: absolute;
+  top: 0;
+  left: -40px;
+  transform: skew(20deg);
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  z-index: -1;
+}
+
+/* التكليف 3 */
+.task3 {
+  background-color: white;
   color: black;
+  height: 200px;
+  width: 600px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
-  font-size: 30px;
-  font-weight: bold;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-
+  margin: auto;
+  position: relative;
+  z-index: 0;
+  font-size: 15px;
 }
 
-.task2 div::before {
-  content: "";
-  position: absolute;
-  /*background-color: #03A9F4;
-  */height: 100%;
-  width: 100%;
-  transform: rotate(-6deg);
-  z-index: -1;
-  -webkit-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
-  -ms-transform: rotate(-6deg);
-  -o-transform: rotate(-6deg);
-  border: 10px solid;
-  border-color: #e91e63 #e91e63 #e91e63 transparent;
-  border-radius: 50%;
-
-
-
-}
-
-
-
-.task2 div::after {
-  content: "";
-  position: absolute;
-  background-color: transparent;
-  height: 110%;
-  width: 110%;
-  transform: rotate(6deg);
-  z-index: -2;
-  -webkit-transform: rotate(6deg);
-  -moz-transform: rotate(6deg);
-  -ms-transform: rotate(6deg);
-  -o-transform: rotate(6deg);
-
-  border: 10px solid ;
-  border-color: #2196F3 transparent #2196F3 #2196F3;
-  border-radius: 50%;
-}
-
-
-/*    التكليف 3 */
-.task3{
+/* التكليف 4 */
+.task4 {
   background-color: white;
   /* color: black; */
-  height: 600px;
+  height: 500px;
   width: 600px;
   display: flex;
   justify-content: center;
@@ -156,83 +162,119 @@
   z-index: 0;
 }
 
-.task3 div{
-  position: relative;
-  background-color: #eee;
-  height: 200px;
+.task4 div {
   width: 200px;
-  color: black;
+  height: 200px;
+  background-color: #607d8b;
+  border-bottom: 5px solid black;
+  position: relative;
+}
+
+.task4 div::before {
+  content: "Osama";
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 16px;
+}
+
+.task4 div::after {
+  content: "";
+  width: 69%;
+  height: 69%;
+  background-color: black;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  position: absolute;
+  top: -69px;
+  left: 29px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+/* التكليف 5 */
+.task5 {
+  background-color: white;
+  /* color: black; */
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+  perspective: 600px;
+}
+
+.task5 div {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.task5 div::before {
+  content: "Front";
+  position: absolute;
+  background-color: #fa3664;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
-  font-size: 30px;
-  font-weight: bold;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
 }
 
-.task3 div::before {
-  content: "";
+.task5 div::after {
+  content: "Back";
   position: absolute;
-  /*background-color: #03A9F4;
-  */height: 100%;
+  background-color: #1692fc;
   width: 100%;
-  transform: rotate(-6deg);
-  z-index: -1;
-  -webkit-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
-  -ms-transform: rotate(-6deg);
-  -o-transform: rotate(-6deg);
-  border: 10px solid;
-  border-color: #e91e63 #e91e63 #e91e63 transparent;
-  border-radius: 50%;
-  transition: .5s ;
-  -webkit-transition: .5s ;
-  -moz-transition: .5s ;
-  -ms-transition: .5s ;
-  -o-transition: .5s ;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
-.task3 div:hover::before{
-  transform: rotate(1turn);
-  -webkit-transform: rotate(1turn);
-  -moz-transform: rotate(1turn);
-  -ms-transform: rotate(1turn);
-  -o-transform: rotate(1turn);
+.task5 .rotateY::after {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
 
-.task3 div::after {
-  content: "";
-  position: absolute;
-  background-color: transparent;
-  height: 110%;
-  width: 110%;
-  transform: rotate(6deg);
-  z-index: -2;
-  -webkit-transform: rotate(6deg);
-  -moz-transform: rotate(6deg);
-  -ms-transform: rotate(6deg);
-  -o-transform: rotate(6deg);
-  border: 10px solid ;
-  border-color: #2196F3 transparent #2196F3 #2196F3;
-  border-radius: 50%;
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
-
-  transition-delay: .5s;
+.task5 .rotateY:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
 
-.task3 div:hover::after{
-  transform: rotate(1turn);
-  -webkit-transform: rotate(1turn);
-  -moz-transform: rotate(1turn);
-  -ms-transform: rotate(1turn);
-  -o-transform: rotate(1turn);
+.task5 .rotateX::after {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+
+.task5 .rotateX:hover {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
 }
